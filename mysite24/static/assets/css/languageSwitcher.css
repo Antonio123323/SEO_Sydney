@@ -1,0 +1,125 @@
+#languageSelect {
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: auto;
+    display: block;
+    min-width: 84px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    z-index: 99;
+}
+
+html[lang="ar-AR"] #languageSelect {
+    right: auto;
+    left: 0;
+}
+
+@media screen and (max-width: 991px) {
+    #languageSelect {
+        position: static;
+    }
+}
+
+#languageSelect .languageSelect-container {
+    position: relative;
+}
+
+#languageSelect .languageSelect-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 8px 20px 8px 12px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #030729;
+    color: #fff;
+}
+
+#languageSelect .flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+#languageSelect .lang {
+    display: block;
+    max-height: 20px;
+    margin-right: 0;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#languageSelect .arrow {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: transparent #fff #fff transparent;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#languageSelect .languageSelect-list {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 130px;
+    min-width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+
+#languageSelect .languageSelect-list.show {
+    display: block;
+}
+
+#languageSelect .languageSelect-list-item-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 3px 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 2px solid transparent;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transition: border-color 300ms ease;
+    -o-transition: border-color 300ms ease;
+    transition: border-color 300ms ease;
+}
+
+#languageSelect .languageSelect-list-item-link:hover {
+    border-color: #c4cbfa;
+    background-color: #dfe4fe;
+}
+
+
+#languageSelect .languageSelect-list-item-link-flag {
+    width: 22px;
+    height: 18px;
+    margin-right: 4px;
+}

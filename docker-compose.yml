@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: nginx_proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:rw
+      # SSL сертификаты Let's Encrypt (раскомментируйте после получения сертификатов)
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      # Для ручных сертификатов используйте:
+      # - ./nginx/ssl:/etc/nginx/ssl:ro
+    restart: unless-stopped
+    networks:
+      - flask_network
+
+  # Для добавления нового сайта:
+  # 1. Добавьте новый сервис ниже (скопируйте mysite23 и измените название)
+  # 2. Создайте файл nginx/conf.d/ваш-домен.com.conf
+  # 3. Добавьте зависимость в nginx depends_on
+
+networks:
+  flask_network:
+    driver: bridge
+

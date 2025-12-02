@@ -1,0 +1,126 @@
+/* Mobile Tables CSS - Responsive table styles for better mobile experience */
+
+/* Force horizontal scrolling for all screen sizes */
+.overflow-x-auto {
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #66A9D9 #1A1A1A;
+    display: block;
+    width: 100%;
+}
+
+/* Ensure tables always scroll */
+.overflow-x-auto table {
+    display: table !important;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+/* Enhanced mobile table responsiveness */
+@media (max-width: 768px) {
+    /* Force table minimum width */
+    .overflow-x-auto table {
+        min-width: 600px !important;
+        width: auto !important;
+    }
+    
+    /* Webkit scrollbar styling */
+    .overflow-x-auto::-webkit-scrollbar {
+        height: 8px;
+    }
+    
+    .overflow-x-auto::-webkit-scrollbar-track {
+        background: #1A1A1A;
+        border-radius: 4px;
+    }
+    
+    .overflow-x-auto::-webkit-scrollbar-thumb {
+        background: #66A9D9;
+        border-radius: 4px;
+    }
+    
+    .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+        background: #5599C7;
+    }
+    
+    /* Table styling for mobile */
+    .overflow-x-auto table {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    /* Table cell styling */
+    .overflow-x-auto table th,
+    .overflow-x-auto table td {
+        white-space: nowrap !important;
+        padding: 12px 8px !important;
+        min-width: 120px;
+        vertical-align: top;
+    }
+    
+    /* Specific column width adjustments */
+    table.min-w-full th:first-child,
+    table.min-w-full td:first-child {
+        min-width: 140px;
+        font-weight: 600;
+    }
+    
+    /* Text wrapping for longer content */
+    table.min-w-full td.text-sm {
+        white-space: normal;
+        line-height: 1.4;
+        min-width: 160px;
+    }
+
+    /* Hide scroll indicator when fully scrolled */
+    .overflow-x-auto.scrolled-right::after {
+        opacity: 0;
+    }
+}
+
+/* Extra small screens (mobile landscape) */
+@media (max-width: 480px) {
+    table.min-w-full {
+        min-width: 500px;
+        font-size: 13px;
+    }
+    
+    table.min-w-full th,
+    table.min-w-full td {
+        padding: 10px 6px !important;
+        min-width: 100px;
+    }
+    
+    table.min-w-full th:first-child,
+    table.min-w-full td:first-child {
+        min-width: 120px;
+    }
+    
+    table.min-w-full td.text-sm {
+        min-width: 140px;
+        font-size: 12px;
+    }
+}
+
+/* Smooth scroll behavior */
+.overflow-x-auto {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced focus state for accessibility */
+.overflow-x-auto:focus {
+    outline: 2px solid #66A9D9;
+    outline-offset: 2px;
+}
+
+/* Table header sticky behavior on scroll */
+@media (max-width: 768px) {
+    table.min-w-full thead th {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: #1A1A1A;
+    }
+}
