@@ -78,203 +78,203 @@ def terms():
 def blog():
     return render_template('blog/index.html')
 
-@app.route('/ai-crypto-bots-uk')
+@app.route('/blog/ai-crypto-bots-uk')
 def ai_crypto_bots_uk():
     return render_template('blog/ai-crypto-bots-uk/index.html')
 
-@app.route('/ai-crypto-trading-uk')
+@app.route('/blog/ai-crypto-trading-uk')
 def ai_crypto_trading_uk():
     return render_template('blog/ai-crypto-trading-uk/index.html')
 
-@app.route('/avoid-crypto-scams-uk')
+@app.route('/blog/avoid-crypto-scams-uk')
 def avoid_crypto_scams_uk():
     return render_template('blog/avoid-crypto-scams-uk/index.html')
 
-@app.route('/bitcoin-halving-uk')
+@app.route('/blog/bitcoin-halving-uk')
 def bitcoin_halving_uk():
     return render_template('blog/bitcoin-halving-uk/index.html')
 
-@app.route('/blockchain-courses-uk')
+@app.route('/blog/blockchain-courses-uk')
 def blockchain_courses_uk():
     return render_template('blog/blockchain-courses-uk/index.html')
 
-@app.route('/brexit-crypto-uk')
+@app.route('/blog/brexit-crypto-uk')
 def brexit_crypto_uk():
     return render_template('blog/brexit-crypto-uk/index.html')
 
-@app.route('/buy-bitcoin-uk')
+@app.route('/blog/buy-bitcoin-uk')
 def buy_bitcoin_uk():
     return render_template('blog/buy-bitcoin-uk/index.html')
 
-@app.route('/crypto-apps-uk')
+@app.route('/blog/crypto-apps-uk')
 def crypto_apps_uk():
     return render_template('blog/crypto-apps-uk/index.html')
 
-@app.route('/crypto-arbitrage-uk')
+@app.route('/blog/crypto-arbitrage-uk')
 def crypto_arbitrage_uk():
     return render_template('blog/crypto-arbitrage-uk/index.html')
 
-@app.route('/crypto-bull-run-uk')
+@app.route('/blog/crypto-bull-run-uk')
 def crypto_bull_run_uk():
     return render_template('blog/crypto-bull-run-uk/index.html')
 
-@app.route('/crypto-business-london')
+@app.route('/blog/crypto-business-london')
 def crypto_business_london():
     return render_template('blog/crypto-business-london/index.html')
 
-@app.route('/crypto-challenges-uk')
+@app.route('/blog/crypto-challenges-uk')
 def crypto_challenges_uk():
     return render_template('blog/crypto-challenges-uk/index.html')
 
-@app.route('/crypto-cold-storage-uk')
+@app.route('/blog/crypto-cold-storage-uk')
 def crypto_cold_storage_uk():
     return render_template('blog/crypto-cold-storage-uk/index.html')
 
-@app.route('/crypto-credit-cards-uk')
+@app.route('/blog/crypto-credit-cards-uk')
 def crypto_credit_cards_uk():
     return render_template('blog/crypto-credit-cards-uk/index.html')
 
-@app.route('/crypto-education-uk')
+@app.route('/blog/crypto-education-uk')
 def crypto_education_uk():
     return render_template('blog/crypto-education-uk/index.html')
 
-@app.route('/crypto-etf-uk')
+@app.route('/blog/crypto-etf-uk')
 def crypto_etf_uk():
     return render_template('blog/crypto-etf-uk/index.html')
 
-@app.route('/crypto-events-london')
+@app.route('/blog/crypto-events-london')
 def crypto_events_london():
     return render_template('blog/crypto-events-london/index.html')
 
-@app.route('/crypto-friendly-banks-uk')
+@app.route('/blog/crypto-friendly-banks-uk')
 def crypto_friendly_banks_uk():
     return render_template('blog/crypto-friendly-banks-uk/index.html')
 
-@app.route('/crypto-influencers-uk')
+@app.route('/blog/crypto-influencers-uk')
 def crypto_influencers_uk():
     return render_template('blog/crypto-influencers-uk/index.html')
 
-@app.route('/crypto-investment-uk')
+@app.route('/blog/crypto-investment-uk')
 def crypto_investment_uk():
     return render_template('blog/crypto-investment-uk/index.html')
 
-@app.route('/crypto-loans-uk')
+@app.route('/blog/crypto-loans-uk')
 def crypto_loans_uk():
     return render_template('blog/crypto-loans-uk/index.html')
 
-@app.route('/crypto-market-uk-2025')
+@app.route('/blog/crypto-market-uk-2025')
 def crypto_market_uk_2025():
     return render_template('blog/crypto-market-uk-2025/index.html')
 
-@app.route('/crypto-mining-uk')
+@app.route('/blog/crypto-mining-uk')
 def crypto_mining_uk():
     return render_template('blog/crypto-mining-uk/index.html')
 
-@app.route('/crypto-projects-uk-2025')
+@app.route('/blog/crypto-projects-uk-2025')
 def crypto_projects_uk_2025():
     return render_template('blog/crypto-projects-uk-2025/index.html')
 
-@app.route('/crypto-regulations-uk-2025')
+@app.route('/blog/crypto-regulations-uk-2025')
 def crypto_regulations_uk_2025():
     return render_template('blog/crypto-regulations-uk-2025/index.html')
 
-@app.route('/crypto-startups-london')
+@app.route('/blog/crypto-startups-london')
 def crypto_startups_london():
     return render_template('blog/crypto-startups-london/index.html')
 
-@app.route('/crypto-stock-apps-uk')
+@app.route('/blog/crypto-stock-apps-uk')
 def crypto_stock_apps_uk():
     return render_template('blog/crypto-stock-apps-uk/index.html')
 
-@app.route('/crypto-tax-uk-2025')
+@app.route('/blog/crypto-tax-uk-2025')
 def crypto_tax_uk_2025():
     return render_template('blog/crypto-tax-uk-2025/index.html')
 
-@app.route('/crypto-trading-uk')
+@app.route('/blog/crypto-trading-uk')
 def crypto_trading_uk():
     return render_template('blog/crypto-trading-uk/index.html')
 
-@app.route('/crypto-wallets-uk')
+@app.route('/blog/crypto-wallets-uk')
 def crypto_wallets_uk():
     return render_template('blog/crypto-wallets-uk/index.html')
 
-@app.route('/defi-guide-uk')
+@app.route('/blog/defi-guide-uk')
 def defi_guide_uk():
     return render_template('blog/defi-guide-uk/index.html')
 
-@app.route('/defi-platforms-uk')
+@app.route('/blog/defi-platforms-uk')
 def defi_platforms_uk():
     return render_template('blog/defi-platforms-uk/index.html')
 
-@app.route('/diversify-crypto-uk')
+@app.route('/blog/diversify-crypto-uk')
 def diversify_crypto_uk():
     return render_template('blog/diversify-crypto-uk/index.html')
 
-@app.route('/fca-crypto-ads-uk')
+@app.route('/blog/fca-crypto-ads-uk')
 def fca_crypto_ads_uk():
     return render_template('blog/fca-crypto-ads-uk/index.html')
 
-@app.route('/fca-crypto-banks-uk')
+@app.route('/blog/fca-crypto-banks-uk')
 def fca_crypto_banks_uk():
     return render_template('blog/fca-crypto-banks-uk/index.html')
 
-@app.route('/fca-crypto-exchanges-uk')
+@app.route('/blog/fca-crypto-exchanges-uk')
 def fca_crypto_exchanges_uk():
     return render_template('blog/fca-crypto-exchanges-uk/index.html')
 
-@app.route('/gbp-stablecoin-uk')
+@app.route('/blog/gbp-stablecoin-uk')
 def gbp_stablecoin_uk():
     return render_template('blog/gbp-stablecoin-uk/index.html')
 
-@app.route('/hmrc-crypto-tax-uk')
+@app.route('/blog/hmrc-crypto-tax-uk')
 def hmrc_crypto_tax_uk():
     return render_template('blog/hmrc-crypto-tax-uk/index.html')
 
-@app.route('/hmrc-crypto-tracking')
+@app.route('/blog/hmrc-crypto-tracking')
 def hmrc_crypto_tracking():
     return render_template('blog/hmrc-crypto-tracking/index.html')
 
-@app.route('/nft-tax-uk-2025')
+@app.route('/blog/nft-tax-uk-2025')
 def nft_tax_uk_2025():
     return render_template('blog/nft-tax-uk-2025/index.html')
 
-@app.route('/prop-trading-london')
+@app.route('/blog/prop-trading-london')
 def prop_trading_london():
     return render_template('blog/prop-trading-london/index.html')
 
-@app.route('/reduce-crypto-tax-uk')
+@app.route('/blog/reduce-crypto-tax-uk')
 def reduce_crypto_tax_uk():
     return render_template('blog/reduce-crypto-tax-uk/index.html')
 
-@app.route('/send-gbp-binance-uk')
+@app.route('/blog/send-gbp-binance-uk')
 def send_gbp_binance_uk():
     return render_template('blog/send-gbp-binance-uk/index.html')
 
-@app.route('/stablecoins-uk-2025')
+@app.route('/blog/stablecoins-uk-2025')
 def stablecoins_uk_2025():
     return render_template('blog/stablecoins-uk-2025/index.html')
 
-@app.route('/staking-crypto-uk')
+@app.route('/blog/staking-crypto-uk')
 def staking_crypto_uk():
     return render_template('blog/staking-crypto-uk/index.html')
 
-@app.route('/trading-courses-uk')
+@app.route('/blog/trading-courses-uk')
 def trading_courses_uk():
     return render_template('blog/trading-courses-uk/index.html')
 
-@app.route('/trading-psychology-uk')
+@app.route('/blog/trading-psychology-uk')
 def trading_psychology_uk():
     return render_template('blog/trading-psychology-uk/index.html')
 
-@app.route('/tradingview-crypto-uk')
+@app.route('/blog/tradingview-crypto-uk')
 def tradingview_crypto_uk():
     return render_template('blog/tradingview-crypto-uk/index.html')
 
-@app.route('/uk-crypto-outlook')
+@app.route('/blog/uk-crypto-outlook')
 def uk_crypto_outlook():
     return render_template('blog/uk-crypto-outlook/index.html')
 
-@app.route('/uk-crypto-regulation')
+@app.route('/blog/uk-crypto-regulation')
 def uk_crypto_regulation():
     return render_template('blog/uk-crypto-regulation/index.html')
 

@@ -30,7 +30,7 @@ def redirect_index():
 
 @app.errorhandler(404)
 def not_found(error):
-    return redirect(url_for('index'), code=301)
+    return render_template('404/index.html'), 404
 
 # Route to handle sitemap.xml
 @app.route('/sitemap.xml')
@@ -59,203 +59,203 @@ def blog():
     return render_template('blog/index.html')
 
 # Routes for blog subdirectories
-@app.route('/bat-cryptocurrency-price-india-2025')
+@app.route('/blog/bat-cryptocurrency-price-india-2025')
 def bat_cryptocurrency_price_india_2025():
     return render_template('blog/bat-cryptocurrency-price-india-2025/index.html')
 
-@app.route('/bee-cryptocurrency-next-pi')
+@app.route('/blog/bee-cryptocurrency-next-pi')
 def bee_cryptocurrency_next_pi():
     return render_template('blog/bee-cryptocurrency-next-pi/index.html')
 
-@app.route('/bee-vs-pi-cryptocurrency-india')
+@app.route('/blog/bee-vs-pi-cryptocurrency-india')
 def bee_vs_pi_cryptocurrency_india():
     return render_template('blog/bee-vs-pi-cryptocurrency-india/index.html')
 
-@app.route('/best-books-about-cryptocurrency')
+@app.route('/blog/best-books-about-cryptocurrency')
 def best_books_about_cryptocurrency():
     return render_template('blog/best-books-about-cryptocurrency/index.html')
 
-@app.route('/big-bull-cryptocurrency-india')
+@app.route('/blog/big-bull-cryptocurrency-india')
 def big_bull_cryptocurrency_india():
     return render_template('blog/big-bull-cryptocurrency-india/index.html')
 
-@app.route('/buy-dogecoin-india')
+@app.route('/blog/buy-dogecoin-india')
 def buy_dogecoin_india():
     return render_template('blog/buy-dogecoin-india/index.html')
 
-@app.route('/cheap-cryptocurrency-2025')
+@app.route('/blog/cheap-cryptocurrency-2025')
 def cheap_cryptocurrency_2025():
     return render_template('blog/cheap-cryptocurrency-2025/index.html')
 
-@app.route('/create-cryptocurrency-coin-2025')
+@app.route('/blog/create-cryptocurrency-coin-2025')
 def create_cryptocurrency_coin_2025():
     return render_template('blog/create-cryptocurrency-coin-2025/index.html')
 
-@app.route('/crypto-mining-india')
+@app.route('/blog/crypto-mining-india')
 def crypto_mining_india():
     return render_template('blog/crypto-mining-india/index.html')
 
-@app.route('/cryptocurrency-crash-2025')
+@app.route('/blog/cryptocurrency-crash-2025')
 def cryptocurrency_crash_2025():
     return render_template('blog/cryptocurrency-crash-2025/index.html')
 
-@app.route('/cryptocurrency-in-india-legal-2025')
+@app.route('/blog/cryptocurrency-in-india-legal-2025')
 def cryptocurrency_in_india_legal_2025():
     return render_template('blog/cryptocurrency-in-india-legal-2025/index.html')
 
-@app.route('/cryptocurrency-kaise-kharide')
+@app.route('/blog/cryptocurrency-kaise-kharide')
 def cryptocurrency_kaise_kharide():
     return render_template('blog/cryptocurrency-kaise-kharide/index.html')
 
-@app.route('/cryptocurrency-kya-hoti-hai')
+@app.route('/blog/cryptocurrency-kya-hoti-hai')
 def cryptocurrency_kya_hoti_hai():
     return render_template('blog/cryptocurrency-kya-hoti-hai/index.html')
 
-@app.route('/cryptocurrency-meaning-tamil-telugu')
+@app.route('/blog/cryptocurrency-meaning-tamil-telugu')
 def cryptocurrency_meaning_tamil_telugu():
     return render_template('blog/cryptocurrency-meaning-tamil-telugu/index.html')
 
-@app.route('/cryptocurrency-mlm-software-india')
+@app.route('/blog/cryptocurrency-mlm-software-india')
 def cryptocurrency_mlm_software_india():
     return render_template('blog/cryptocurrency-mlm-software-india/index.html')
 
-@app.route('/cryptocurrency-ppt-india')
+@app.route('/blog/cryptocurrency-ppt-india')
 def cryptocurrency_ppt_india():
     return render_template('blog/cryptocurrency-ppt-india/index.html')
 
-@app.route('/cryptocurrency-pr-agency-india')
+@app.route('/blog/cryptocurrency-pr-agency-india')
 def cryptocurrency_pr_agency_india():
     return render_template('blog/cryptocurrency-pr-agency-india/index.html')
 
-@app.route('/cryptocurrency-regulation-india')
+@app.route('/blog/cryptocurrency-regulation-india')
 def cryptocurrency_regulation_india():
     return render_template('blog/cryptocurrency-regulation-india/index.html')
 
-@app.route('/cryptocurrency-upsc')
+@app.route('/blog/cryptocurrency-upsc')
 def cryptocurrency_upsc():
     return render_template('blog/cryptocurrency-upsc/index.html')
 
-@app.route('/cryptocurrency-upsc-notes')
+@app.route('/blog/cryptocurrency-upsc-notes')
 def cryptocurrency_upsc_notes():
     return render_template('blog/cryptocurrency-upsc-notes/index.html')
 
-@app.route('/cryptocurrency-wallet-development')
+@app.route('/blog/cryptocurrency-wallet-development')
 def cryptocurrency_wallet_development():
     return render_template('blog/cryptocurrency-wallet-development/index.html')
 
-@app.route('/cryptocurrency-wallet-development-india')
+@app.route('/blog/cryptocurrency-wallet-development-india')
 def cryptocurrency_wallet_development_india():
     return render_template('blog/cryptocurrency-wallet-development-india/index.html')
 
-@app.route('/diem-cryptocurrency-price-2025')
+@app.route('/blog/diem-cryptocurrency-price-2025')
 def diem_cryptocurrency_price_2025():
     return render_template('blog/diem-cryptocurrency-price-2025/index.html')
 
-@app.route('/dubaicoin-cryptocurrency-2025')
+@app.route('/blog/dubaicoin-cryptocurrency-2025')
 def dubaicoin_cryptocurrency_2025():
     return render_template('blog/dubaicoin-cryptocurrency-2025/index.html')
 
-@app.route('/exploring-public-crypto-datasets-bigquery')
+@app.route('/blog/exploring-public-crypto-datasets-bigquery')
 def exploring_public_crypto_datasets_bigquery():
     return render_template('blog/exploring-public-crypto-datasets-bigquery/index.html')
 
-@app.route('/future-of-cryptocurrency-india-2025')
+@app.route('/blog/future-of-cryptocurrency-india-2025')
 def future_of_cryptocurrency_india_2025():
     return render_template('blog/future-of-cryptocurrency-india-2025/index.html')
 
-@app.route('/gari-token-cryptocurrency-india')
+@app.route('/blog/gari-token-cryptocurrency-india')
 def gari_token_cryptocurrency_india():
     return render_template('blog/gari-token-cryptocurrency-india/index.html')
 
-@app.route('/how-cryptocurrency-mining-works-india')
+@app.route('/blog/how-cryptocurrency-mining-works-india')
 def how_cryptocurrency_mining_works_india():
     return render_template('blog/how-cryptocurrency-mining-works-india/index.html')
 
-@app.route('/how-to-buy-cryptocurrency-in-india')
+@app.route('/blog/how-to-buy-cryptocurrency-in-india')
 def how_to_buy_cryptocurrency_in_india():
     return render_template('blog/how-to-buy-cryptocurrency-in-india/index.html')
 
-@app.route('/investing-cryptocurrency-india-2025')
+@app.route('/blog/investing-cryptocurrency-india-2025')
 def investing_cryptocurrency_india_2025():
     return render_template('blog/investing-cryptocurrency-india-2025/index.html')
 
-@app.route('/kibo-cryptocurrency-fake-or-real')
+@app.route('/blog/kibo-cryptocurrency-fake-or-real')
 def kibo_cryptocurrency_fake_or_real():
     return render_template('blog/kibo-cryptocurrency-fake-or-real/index.html')
 
-@app.route('/lovely-inu-cryptocurrency')
+@app.route('/blog/lovely-inu-cryptocurrency')
 def lovely_inu_cryptocurrency():
     return render_template('blog/lovely-inu-cryptocurrency/index.html')
 
-@app.route('/lovely-inu-shiba-inu-price-india')
+@app.route('/blog/lovely-inu-shiba-inu-price-india')
 def lovely_inu_shiba_inu_price_india():
     return render_template('blog/lovely-inu-shiba-inu-price-india/index.html')
 
-@app.route('/lpnt-cryptocurrency-price-2025')
+@app.route('/blog/lpnt-cryptocurrency-price-2025')
 def lpnt_cryptocurrency_price_2025():
     return render_template('blog/lpnt-cryptocurrency-price-2025/index.html')
 
-@app.route('/lpnt-cryptocurrency-price-india')
+@app.route('/blog/lpnt-cryptocurrency-price-india')
 def lpnt_cryptocurrency_price_india():
     return render_template('blog/lpnt-cryptocurrency-price-india/index.html')
 
-@app.route('/metal-cryptocurrency-price-forecast-2025')
+@app.route('/blog/metal-cryptocurrency-price-forecast-2025')
 def metal_cryptocurrency_price_forecast_2025():
     return render_template('blog/metal-cryptocurrency-price-forecast-2025/index.html')
 
-@app.route('/ooki-cryptocurrency-2025')
+@app.route('/blog/ooki-cryptocurrency-2025')
 def ooki_cryptocurrency_2025():
     return render_template('blog/ooki-cryptocurrency-2025/index.html')
 
-@app.route('/penny-cryptocurrency-list-2025')
+@app.route('/blog/penny-cryptocurrency-list-2025')
 def penny_cryptocurrency_list_2025():
     return render_template('blog/penny-cryptocurrency-list-2025/index.html')
 
-@app.route('/pi-cryptocurrency-price')
+@app.route('/blog/pi-cryptocurrency-price')
 def pi_cryptocurrency_price():
     return render_template('blog/pi-cryptocurrency-price/index.html')
 
-@app.route('/pi-cryptocurrency-price-india')
+@app.route('/blog/pi-cryptocurrency-price-india')
 def pi_cryptocurrency_price_india():
     return render_template('blog/pi-cryptocurrency-price-india/index.html')
 
-@app.route('/quotes-about-cryptocurrency')
+@app.route('/blog/quotes-about-cryptocurrency')
 def quotes_about_cryptocurrency():
     return render_template('blog/quotes-about-cryptocurrency/index.html')
 
-@app.route('/reliance-jio-coin-cryptocurrency')
+@app.route('/blog/reliance-jio-coin-cryptocurrency')
 def reliance_jio_coin_cryptocurrency():
     return render_template('blog/reliance-jio-coin-cryptocurrency/index.html')
 
-@app.route('/salman-khan-cryptocurrency')
+@app.route('/blog/salman-khan-cryptocurrency')
 def salman_khan_cryptocurrency():
     return render_template('blog/salman-khan-cryptocurrency/index.html')
 
-@app.route('/salman-khan-cryptocurrency-india-2025')
+@app.route('/blog/salman-khan-cryptocurrency-india-2025')
 def salman_khan_cryptocurrency_india_2025():
     return render_template('blog/salman-khan-cryptocurrency-india-2025/index.html')
 
-@app.route('/squid-game-cryptocurrency-india')
+@app.route('/blog/squid-game-cryptocurrency-india')
 def squid_game_cryptocurrency_india():
     return render_template('blog/squid-game-cryptocurrency-india/index.html')
 
-@app.route('/start-cryptocurrency-exchange')
+@app.route('/blog/start-cryptocurrency-exchange')
 def start_cryptocurrency_exchange():
     return render_template('blog/start-cryptocurrency-exchange/index.html')
 
-@app.route('/start-cryptocurrency-exchange-india')
+@app.route('/blog/start-cryptocurrency-exchange-india')
 def start_cryptocurrency_exchange_india():
     return render_template('blog/start-cryptocurrency-exchange-india/index.html')
 
-@app.route('/tata-cryptocurrency-india')
+@app.route('/blog/tata-cryptocurrency-india')
 def tata_cryptocurrency_india():
     return render_template('blog/tata-cryptocurrency-india/index.html')
 
-@app.route('/what-is-cryptocurrency-hindi')
+@app.route('/blog/what-is-cryptocurrency-hindi')
 def what_is_cryptocurrency_hindi():
     return render_template('blog/what-is-cryptocurrency-hindi/index.html')
 
-@app.route('/white-label-cryptocurrency-exchange-india')
+@app.route('/blog/white-label-cryptocurrency-exchange-india')
 def white_label_cryptocurrency_exchange_india():
     return render_template('blog/white-label-cryptocurrency-exchange-india/index.html')
 

@@ -78,203 +78,203 @@ def terms():
 def blog():
     return render_template('blog/index.html')
 
-@app.route('/beste-kryptovalut')
+@app.route('/blog/beste-kryptovalut')
 def beste_kryptovalut():
     return render_template('blog/beste-kryptovalut/index.html')
 
-@app.route('/beste-kryptovaluta-2025')
+@app.route('/blog/beste-kryptovaluta-2025')
 def beste_kryptovaluta_2025():
     return render_template('blog/beste-kryptovaluta-2025/index.html')
 
-@app.route('/bruke-kryptovaluta')
+@app.route('/blog/bruke-kryptovaluta')
 def bruke_kryptovaluta():
     return render_template('blog/bruke-kryptovaluta/index.html')
 
-@app.route('/hva-er-kryptovaluta')
+@app.route('/blog/hva-er-kryptovaluta')
 def hva_er_kryptovaluta():
     return render_template('blog/hva-er-kryptovaluta/index.html')
 
-@app.route('/hvordan-investere-kryptovaluta')
+@app.route('/blog/hvordan-investere-kryptovaluta')
 def hvordan_investere_kryptovaluta():
     return render_template('blog/hvordan-investere-kryptovaluta/index.html')
 
-@app.route('/hvordan-kjope-kryptovaluta')
+@app.route('/blog/hvordan-kjope-kryptovaluta')
 def hvordan_kjope_kryptovaluta():
     return render_template('blog/hvordan-kjope-kryptovaluta/index.html')
 
-@app.route('/hvordan-lage-kryptovaluta')
+@app.route('/blog/hvordan-lage-kryptovaluta')
 def hvordan_lage_kryptovaluta():
     return render_template('blog/hvordan-lage-kryptovaluta/index.html')
 
-@app.route('/investere-krypto-2025')
+@app.route('/blog/investere-krypto-2025')
 def investere_krypto_2025():
     return render_template('blog/investere-krypto-2025/index.html')
 
-@app.route('/kryptovaluta-2025')
+@app.route('/blog/kryptovaluta-2025')
 def kryptovaluta_2025():
     return render_template('blog/kryptovaluta-2025/index.html')
 
-@app.route('/kryptovaluta-ai')
+@app.route('/blog/kryptovaluta-ai')
 def kryptovaluta_ai():
     return render_template('blog/kryptovaluta-ai/index.html')
 
-@app.route('/kryptovaluta-ai-marked-2025')
+@app.route('/blog/kryptovaluta-ai-marked-2025')
 def kryptovaluta_ai_marked_2025():
     return render_template('blog/kryptovaluta-ai-marked-2025/index.html')
 
-@app.route('/kryptovaluta-baerekraft')
+@app.route('/blog/kryptovaluta-baerekraft')
 def kryptovaluta_baerekraft():
     return render_template('blog/kryptovaluta-baerekraft/index.html')
 
-@app.route('/kryptovaluta-barn')
+@app.route('/blog/kryptovaluta-barn')
 def kryptovaluta_barn():
     return render_template('blog/kryptovaluta-barn/index.html')
 
-@app.route('/kryptovaluta-betaling-2025')
+@app.route('/blog/kryptovaluta-betaling-2025')
 def kryptovaluta_betaling_2025():
     return render_template('blog/kryptovaluta-betaling-2025/index.html')
 
-@app.route('/kryptovaluta-bors')
+@app.route('/blog/kryptovaluta-bors')
 def kryptovaluta_bors():
     return render_template('blog/kryptovaluta-bors/index.html')
 
-@app.route('/kryptovaluta-bors-2025')
+@app.route('/blog/kryptovaluta-bors-2025')
 def kryptovaluta_bors_2025():
     return render_template('blog/kryptovaluta-bors-2025/index.html')
 
-@app.route('/kryptovaluta-dnb')
+@app.route('/blog/kryptovaluta-dnb')
 def kryptovaluta_dnb():
     return render_template('blog/kryptovaluta-dnb/index.html')
 
-@app.route('/kryptovaluta-dnb-2025')
+@app.route('/blog/kryptovaluta-dnb-2025')
 def kryptovaluta_dnb_2025():
     return render_template('blog/kryptovaluta-dnb-2025/index.html')
 
-@app.route('/kryptovaluta-finanskrise-2025')
+@app.route('/blog/kryptovaluta-finanskrise-2025')
 def kryptovaluta_finanskrise_2025():
     return render_template('blog/kryptovaluta-finanskrise-2025/index.html')
 
-@app.route('/kryptovaluta-for-dummies')
+@app.route('/blog/kryptovaluta-for-dummies')
 def kryptovaluta_for_dummies():
     return render_template('blog/kryptovaluta-for-dummies/index.html')
 
-@app.route('/kryptovaluta-fremtid')
+@app.route('/blog/kryptovaluta-fremtid')
 def kryptovaluta_fremtid():
     return render_template('blog/kryptovaluta-fremtid/index.html')
 
-@app.route('/kryptovaluta-investering')
+@app.route('/blog/kryptovaluta-investering')
 def kryptovaluta_investering():
     return render_template('blog/kryptovaluta-investering/index.html')
 
-@app.route('/kryptovaluta-kurser')
+@app.route('/blog/kryptovaluta-kurser')
 def kryptovaluta_kurser():
     return render_template('blog/kryptovaluta-kurser/index.html')
 
-@app.route('/kryptovaluta-kurser-live')
+@app.route('/blog/kryptovaluta-kurser-live')
 def kryptovaluta_kurser_live():
     return render_template('blog/kryptovaluta-kurser-live/index.html')
 
-@app.route('/kryptovaluta-kurser-live-2025')
+@app.route('/blog/kryptovaluta-kurser-live-2025')
 def kryptovaluta_kurser_live_2025():
     return render_template('blog/kryptovaluta-kurser-live-2025/index.html')
 
-@app.route('/kryptovaluta-morten-harket')
+@app.route('/blog/kryptovaluta-morten-harket')
 def kryptovaluta_morten_harket():
     return render_template('blog/kryptovaluta-morten-harket/index.html')
 
-@app.route('/kryptovaluta-norden-2030')
+@app.route('/blog/kryptovaluta-norden-2030')
 def kryptovaluta_norden_2030():
     return render_template('blog/kryptovaluta-norden-2030/index.html')
 
-@app.route('/kryptovaluta-norge')
+@app.route('/blog/kryptovaluta-norge')
 def kryptovaluta_norge():
     return render_template('blog/kryptovaluta-norge/index.html')
 
-@app.route('/kryptovaluta-norge-2025')
+@app.route('/blog/kryptovaluta-norge-2025')
 def kryptovaluta_norge_2025():
     return render_template('blog/kryptovaluta-norge-2025/index.html')
 
-@app.route('/kryptovaluta-okonomi-2025')
+@app.route('/blog/kryptovaluta-okonomi-2025')
 def kryptovaluta_okonomi_2025():
     return render_template('blog/kryptovaluta-okonomi-2025/index.html')
 
-@app.route('/kryptovaluta-personvern')
+@app.route('/blog/kryptovaluta-personvern')
 def kryptovaluta_personvern():
     return render_template('blog/kryptovaluta-personvern/index.html')
 
-@app.route('/kryptovaluta-regulering-2025')
+@app.route('/blog/kryptovaluta-regulering-2025')
 def kryptovaluta_regulering_2025():
     return render_template('blog/kryptovaluta-regulering-2025/index.html')
 
-@app.route('/kryptovaluta-skattefritt')
+@app.route('/blog/kryptovaluta-skattefritt')
 def kryptovaluta_skattefritt():
     return render_template('blog/kryptovaluta-skattefritt/index.html')
 
-@app.route('/kryptovaluta-skattefritt-2025')
+@app.route('/blog/kryptovaluta-skattefritt-2025')
 def kryptovaluta_skattefritt_2025():
     return render_template('blog/kryptovaluta-skattefritt-2025/index.html')
 
-@app.route('/kryptovaluta-svindel')
+@app.route('/blog/kryptovaluta-svindel')
 def kryptovaluta_svindel():
     return render_template('blog/kryptovaluta-svindel/index.html')
 
-@app.route('/kryptovaluta-svindel-2025')
+@app.route('/blog/kryptovaluta-svindel-2025')
 def kryptovaluta_svindel_2025():
     return render_template('blog/kryptovaluta-svindel-2025/index.html')
 
-@app.route('/kryptovaluta-svindel-ny')
+@app.route('/blog/kryptovaluta-svindel-ny')
 def kryptovaluta_svindel_ny():
     return render_template('blog/kryptovaluta-svindel-ny/index.html')
 
-@app.route('/nye-kryptovaluta-2025')
+@app.route('/blog/nye-kryptovaluta-2025')
 def nye_kryptovaluta_2025():
     return render_template('blog/nye-kryptovaluta-2025/index.html')
 
-@app.route('/pi-kryptovaluta')
+@app.route('/blog/pi-kryptovaluta')
 def pi_kryptovaluta():
     return render_template('blog/pi-kryptovaluta/index.html')
 
-@app.route('/pi-kryptovaluta-2025')
+@app.route('/blog/pi-kryptovaluta-2025')
 def pi_kryptovaluta_2025():
     return render_template('blog/pi-kryptovaluta-2025/index.html')
 
-@app.route('/skatt-kryptovaluta')
+@app.route('/blog/skatt-kryptovaluta')
 def skatt_kryptovaluta():
     return render_template('blog/skatt-kryptovaluta/index.html')
 
-@app.route('/skatt-kryptovaluta-2025')
+@app.route('/blog/skatt-kryptovaluta-2025')
 def skatt_kryptovaluta_2025():
     return render_template('blog/skatt-kryptovaluta-2025/index.html')
 
-@app.route('/skatteetaten-krypto-2025')
+@app.route('/blog/skatteetaten-krypto-2025')
 def skatteetaten_krypto_2025():
     return render_template('blog/skatteetaten-krypto-2025/index.html')
 
-@app.route('/skatteetaten-kryptovaluta')
+@app.route('/blog/skatteetaten-kryptovaluta')
 def skatteetaten_kryptovaluta():
     return render_template('blog/skatteetaten-kryptovaluta/index.html')
 
-@app.route('/skattesats-krypto-2025')
+@app.route('/blog/skattesats-krypto-2025')
 def skattesats_krypto_2025():
     return render_template('blog/skattesats-krypto-2025/index.html')
 
-@app.route('/skattesats-kryptovaluta')
+@app.route('/blog/skattesats-kryptovaluta')
 def skattesats_kryptovaluta():
     return render_template('blog/skattesats-kryptovaluta/index.html')
 
-@app.route('/stellar-kryptovaluta')
+@app.route('/blog/stellar-kryptovaluta')
 def stellar_kryptovaluta():
     return render_template('blog/stellar-kryptovaluta/index.html')
 
-@app.route('/stellar-kryptovaluta-2025')
+@app.route('/blog/stellar-kryptovaluta-2025')
 def stellar_kryptovaluta_2025():
     return render_template('blog/stellar-kryptovaluta-2025/index.html')
 
-@app.route('/sverige-kryptovaluta')
+@app.route('/blog/sverige-kryptovaluta')
 def sverige_kryptovaluta():
     return render_template('blog/sverige-kryptovaluta/index.html')
 
-@app.route('/sverige-norge-krypto')
+@app.route('/blog/sverige-norge-krypto')
 def sverige_norge_krypto():
     return render_template('blog/sverige-norge-krypto/index.html')
 
