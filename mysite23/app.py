@@ -29,7 +29,7 @@ def redirect_index():
 
 @app.errorhandler(404)
 def not_found(error):
-    return render_template('404/404.html'), 404
+    return render_template('404/index.html'), 404
 
 
 # Default route for testing
@@ -189,11 +189,6 @@ def sitemap():
         '/beste-beleggen-cursussen-belgie',
         '/crypto-beleggen-voor-beginners',
         '/veilig-beleggen-in-goud',
-        '/modern-income-sources-crypto-nfts-ai',
-        '/passive-income-investing-etfs-stocks-bonds',
-        '/passive-income-with-ai-artificial-intelligence',
-        '/types-of-passive-income-for-beginners',
-        '/wat-is-passief-inkomen',
     ]
 
     # Generate XML sitemap
