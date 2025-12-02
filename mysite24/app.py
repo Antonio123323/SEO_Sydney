@@ -30,7 +30,7 @@ def redirect_index():
 
 @app.errorhandler(404)
 def not_found(error):
-    return redirect(url_for('index'), code=301)
+    return render_template('404/index.html'), 404
 
 # Route to handle sitemap.xml
 @app.route('/sitemap.xml')
