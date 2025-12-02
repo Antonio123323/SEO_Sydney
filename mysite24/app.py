@@ -65,203 +65,203 @@ def blog():
     return render_template('blog/index.html')
 
 # Routes for blog subdirectories
-@app.route('/ai-bitcoin-mining')
+@app.route('/blog/ai-bitcoin-mining')
 def ai_bitcoin_mining():
     return render_template('blog/ai-bitcoin-mining/index.html')
 
-@app.route('/ai-bitcoin-price-prediction-uae')
+@app.route('/blog/ai-bitcoin-price-prediction-uae')
 def ai_bitcoin_price_prediction_uae():
     return render_template('blog/ai-bitcoin-price-prediction-uae/index.html')
 
-@app.route('/ai-crypto-future-uae')
+@app.route('/blog/ai-crypto-future-uae')
 def ai_crypto_future_uae():
     return render_template('blog/ai-crypto-future-uae/index.html')
 
-@app.route('/best-crypto-to-invest-uae-2025')
+@app.route('/blog/best-crypto-to-invest-uae-2025')
 def best_crypto_to_invest_uae_2025():
     return render_template('blog/best-crypto-to-invest-uae-2025/index.html')
 
-@app.route('/best-crypto-uae')
+@app.route('/blog/best-crypto-uae')
 def best_crypto_uae():
     return render_template('blog/best-crypto-uae/index.html')
 
-@app.route('/best-crypto-uae-wallet')
+@app.route('/blog/best-crypto-uae-wallet')
 def best_crypto_uae_wallet():
     return render_template('blog/best-crypto-uae-wallet/index.html')
 
-@app.route('/best-crypto-wallet-uae')
+@app.route('/blog/best-crypto-wallet-uae')
 def best_crypto_wallet_uae():
     return render_template('blog/best-crypto-wallet-uae/index.html')
 
-@app.route('/bitcoin-2025-halving-profits')
+@app.route('/blog/bitcoin-2025-halving-profits')
 def bitcoin_2025_halving_profits():
     return render_template('blog/bitcoin-2025-halving-profits/index.html')
 
-@app.route('/bitcoin-halving-2025-analysis')
+@app.route('/blog/bitcoin-halving-2025-analysis')
 def bitcoin_halving_2025_analysis():
     return render_template('blog/bitcoin-halving-2025-analysis/index.html')
 
-@app.route('/bitcoin-mining-apps')
+@app.route('/blog/bitcoin-mining-apps')
 def bitcoin_mining_apps():
     return render_template('blog/bitcoin-mining-apps/index.html')
 
-@app.route('/bitcoin-mining-apps-2025')
+@app.route('/blog/bitcoin-mining-apps-2025')
 def bitcoin_mining_apps_2025():
     return render_template('blog/bitcoin-mining-apps-2025/index.html')
 
-@app.route('/bitcoin-mining-future-2025')
+@app.route('/blog/bitcoin-mining-future-2025')
 def bitcoin_mining_future_2025():
     return render_template('blog/bitcoin-mining-future-2025/index.html')
 
-@app.route('/bitcoin-mining-home-uae')
+@app.route('/blog/bitcoin-mining-home-uae')
 def bitcoin_mining_home_uae():
     return render_template('blog/bitcoin-mining-home-uae/index.html')
 
-@app.route('/bitcoin-price-change')
+@app.route('/blog/bitcoin-price-change')
 def bitcoin_price_change():
     return render_template('blog/bitcoin-price-change/index.html')
 
-@app.route('/bitcoin-price-forecast-uae-2025')
+@app.route('/blog/bitcoin-price-forecast-uae-2025')
 def bitcoin_price_forecast_uae_2025():
     return render_template('blog/bitcoin-price-forecast-uae-2025/index.html')
 
-@app.route('/bitcoin-safe-investment-uae-2025')
+@app.route('/blog/bitcoin-safe-investment-uae-2025')
 def bitcoin_safe_investment_uae_2025():
     return render_template('blog/bitcoin-safe-investment-uae-2025/index.html')
 
-@app.route('/bitcoin-supply-demand')
+@app.route('/blog/bitcoin-supply-demand')
 def bitcoin_supply_demand():
     return render_template('blog/bitcoin-supply-demand/index.html')
 
-@app.route('/bitcoin-uae-2025')
+@app.route('/blog/bitcoin-uae-2025')
 def bitcoin_uae_2025():
     return render_template('blog/bitcoin-uae-2025/index.html')
 
-@app.route('/btc-vs-eth-uae')
+@app.route('/blog/btc-vs-eth-uae')
 def btc_vs_eth_uae():
     return render_template('blog/btc-vs-eth-uae/index.html')
 
-@app.route('/buy-bitcoin-in-uae-with-credit-card')
+@app.route('/blog/buy-bitcoin-in-uae-with-credit-card')
 def buy_bitcoin_in_uae_with_credit_card():
     return render_template('blog/buy-bitcoin-in-uae-with-credit-card/index.html')
 
-@app.route('/buy-crypto-in-uae')
+@app.route('/blog/buy-crypto-in-uae')
 def buy_crypto_in_uae():
     return render_template('blog/buy-crypto-in-uae/index.html')
 
-@app.route('/cloud-mining-uae')
+@app.route('/blog/cloud-mining-uae')
 def cloud_mining_uae():
     return render_template('blog/cloud-mining-uae/index.html')
 
-@app.route('/cloud-vs-traditional-mining')
+@app.route('/blog/cloud-vs-traditional-mining')
 def cloud_vs_traditional_mining():
     return render_template('blog/cloud-vs-traditional-mining/index.html')
 
-@app.route('/crypto-2025-trends')
+@app.route('/blog/crypto-2025-trends')
 def crypto_2025_trends():
     return render_template('blog/crypto-2025-trends/index.html')
 
-@app.route('/crypto-abu-dhabi')
+@app.route('/blog/crypto-abu-dhabi')
 def crypto_abu_dhabi():
     return render_template('blog/crypto-abu-dhabi/index.html')
 
-@app.route('/crypto-ai-uae')
+@app.route('/blog/crypto-ai-uae')
 def crypto_ai_uae():
     return render_template('blog/crypto-ai-uae/index.html')
 
-@app.route('/crypto-browser-wallet-uae')
+@app.route('/blog/crypto-browser-wallet-uae')
 def crypto_browser_wallet_uae():
     return render_template('blog/crypto-browser-wallet-uae/index.html')
 
-@app.route('/crypto-buy-uae')
+@app.route('/blog/crypto-buy-uae')
 def crypto_buy_uae():
     return render_template('blog/crypto-buy-uae/index.html')
 
-@app.route('/crypto-coins-comparison')
+@app.route('/blog/crypto-coins-comparison')
 def crypto_coins_comparison():
     return render_template('blog/crypto-coins-comparison/index.html')
 
-@app.route('/crypto-future-financial-system')
+@app.route('/blog/crypto-future-financial-system')
 def crypto_future_financial_system():
     return render_template('blog/crypto-future-financial-system/index.html')
 
-@app.route('/crypto-invest-tips')
+@app.route('/blog/crypto-invest-tips')
 def crypto_invest_tips():
     return render_template('blog/crypto-invest-tips/index.html')
 
-@app.route('/crypto-labs-digital-wallets-uae-2025')
+@app.route('/blog/crypto-labs-digital-wallets-uae-2025')
 def crypto_labs_digital_wallets_uae_2025():
     return render_template('blog/crypto-labs-digital-wallets-uae-2025/index.html')
 
-@app.route('/crypto-license-uae')
+@app.route('/blog/crypto-license-uae')
 def crypto_license_uae():
     return render_template('blog/crypto-license-uae/index.html')
 
-@app.route('/crypto-market-analysis-uae')
+@app.route('/blog/crypto-market-analysis-uae')
 def crypto_market_analysis_uae():
     return render_template('blog/crypto-market-analysis-uae/index.html')
 
-@app.route('/crypto-market-dubai')
+@app.route('/blog/crypto-market-dubai')
 def crypto_market_dubai():
     return render_template('blog/crypto-market-dubai/index.html')
 
-@app.route('/crypto-projects-dubai-2025')
+@app.route('/blog/crypto-projects-dubai-2025')
 def crypto_projects_dubai_2025():
     return render_template('blog/crypto-projects-dubai-2025/index.html')
 
-@app.route('/crypto-real-uae')
+@app.route('/blog/crypto-real-uae')
 def crypto_real_uae():
     return render_template('blog/crypto-real-uae/index.html')
 
-@app.route('/crypto-trends-buying-uae-2025')
+@app.route('/blog/crypto-trends-buying-uae-2025')
 def crypto_trends_buying_uae_2025():
     return render_template('blog/crypto-trends-buying-uae-2025/index.html')
 
-@app.route('/crypto-trends-uae-2025')
+@app.route('/blog/crypto-trends-uae-2025')
 def crypto_trends_uae_2025():
     return render_template('blog/crypto-trends-uae-2025/index.html')
 
-@app.route('/crypto-uae')
+@app.route('/blog/crypto-uae')
 def crypto_uae():
     return render_template('blog/crypto-uae/index.html')
 
-@app.route('/crypto-wallet-2025')
+@app.route('/blog/crypto-wallet-2025')
 def crypto_wallet_2025():
     return render_template('blog/crypto-wallet-2025/index.html')
 
-@app.route('/crypto-wallet-guide-uae')
+@app.route('/blog/crypto-wallet-guide-uae')
 def crypto_wallet_guide_uae():
     return render_template('blog/crypto-wallet-guide-uae/index.html')
 
-@app.route('/green-crypto-future')
+@app.route('/blog/green-crypto-future')
 def green_crypto_future():
     return render_template('blog/green-crypto-future/index.html')
 
-@app.route('/ma-hiya-alomlat-almushafara')
+@app.route('/blog/ma-hiya-alomlat-almushafara')
 def ma_hiya_alomlat_almushafara():
     return render_template('blog/ma-hiya-alomlat-almushafara/index.html')
 
-@app.route('/mustaqbal-crypto-uae-2025')
+@app.route('/blog/mustaqbal-crypto-uae-2025')
 def mustaqbal_crypto_uae_2025():
     return render_template('blog/mustaqbal-crypto-uae-2025/index.html')
 
-@app.route('/rising-cryptos-2025-uae')
+@app.route('/blog/rising-cryptos-2025-uae')
 def rising_cryptos_2025_uae():
     return render_template('blog/rising-cryptos-2025-uae/index.html')
 
-@app.route('/smart-crypto-wallet-uae-2025')
+@app.route('/blog/smart-crypto-wallet-uae-2025')
 def smart_crypto_wallet_uae_2025():
     return render_template('blog/smart-crypto-wallet-uae-2025/index.html')
 
-@app.route('/start-crypto-investment-uae')
+@app.route('/blog/start-crypto-investment-uae')
 def start_crypto_investment_uae():
     return render_template('blog/start-crypto-investment-uae/index.html')
 
-@app.route('/sustainable-bitcoin-mining-uae')
+@app.route('/blog/sustainable-bitcoin-mining-uae')
 def sustainable_bitcoin_mining_uae():
     return render_template('blog/sustainable-bitcoin-mining-uae/index.html')
 
-@app.route('/what-is-bitcoin-mining-uae-2025')
+@app.route('/blog/what-is-bitcoin-mining-uae-2025')
 def what_is_bitcoin_mining_uae_2025():
     return render_template('blog/what-is-bitcoin-mining-uae-2025/index.html')
 
