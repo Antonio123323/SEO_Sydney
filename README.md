@@ -1,4 +1,4 @@
-# SEO_Bangalore - Docker Setup
+# SEO_Sydney - Docker Setup
 
 Простая система для запуска нескольких Flask сайтов на разных доменах.
 
@@ -13,8 +13,8 @@
 
 2. **Загрузите проект:**
    ```bash
-   git clone ваш-репозиторий SEO_Bangalore
-   cd SEO_Bangalore
+   git clone ваш-репозиторий SEO_Sydney
+   cd SEO_Sydney
    ```
    Или через SCP с локального компьютера
 
@@ -51,7 +51,7 @@
 
 3. **На VPS:**
    ```bash
-   cd /SEO_Bangalore
+   cd /SEO_Sydney
    
    # ВАЖНО: Перед git pull откатите локальные изменения скриптов
    git checkout -- add_site.sh install_docker.sh
