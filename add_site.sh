@@ -57,7 +57,8 @@ server {
     }
 
     location / {
-        proxy_pass http://${SERVICE_NAME}:5000;
+        set \$upstream http://${SERVICE_NAME}:5000;
+        proxy_pass \$upstream;
         proxy_set_header Host \$host;
         proxy_set_header X-Real-IP \$remote_addr;
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
@@ -67,7 +68,8 @@ server {
     }
 
     location /static {
-        proxy_pass http://${SERVICE_NAME}:5000;
+        set \$upstream http://${SERVICE_NAME}:5000;
+        proxy_pass \$upstream;
         proxy_cache_valid 200 1d;
         add_header Cache-Control "public, max-age=86400";
     }
