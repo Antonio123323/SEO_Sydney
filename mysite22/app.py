@@ -175,7 +175,7 @@ def send_data():
 def sitemap():
     """Generate and serve a sitemap.xml for the website."""
     # Base URL (ensure this matches your domain, e.g., https://yourdomain.com)
-    base_url = 'http://allpaskapitaal.com/'  # Replace with your actual domain
+    base_url = 'http://allpaskapitaal.com'  # Replace with your actual domain
     # Current date for lastmod (February 27, 2025)
     lastmod = datetime(2025, 2, 27).isoformat() + '+00:00'
 
