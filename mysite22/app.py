@@ -198,11 +198,13 @@ def sitemap():
 
     for url in urls:
         full_url = f"{base_url}{url}"
+        # Priority: 1.0 for homepage, 0.9 for others
+        priority = '1.0' if url == '/' else '0.9'
         sitemap_xml += f'    <url>\n'
         sitemap_xml += f'        <loc>{full_url}</loc>\n'
         sitemap_xml += f'        <lastmod>{lastmod}</lastmod>\n'
         sitemap_xml += f'        <changefreq>monthly</changefreq>\n'
-        sitemap_xml += f'        <priority>0.8</priority>\n'
+        sitemap_xml += f'        <priority>{priority}</priority>\n'
         sitemap_xml += f'    </url>\n'
 
     sitemap_xml += '</urlset>'
