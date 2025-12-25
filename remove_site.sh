@@ -20,22 +20,50 @@ echo "Удаление сайта: $SERVICE_NAME -> $DOMAIN"
 echo "=========================================="
 
 # Удаление конфигурации nginx (если существует)
+# Ищем файлы конфигурации, которые могут содержать домен (включая варианты с символами)
+NGINX_REMOVED=0
+BACKUP_DIR="nginx/conf.d/backups"
+mkdir -p "$BACKUP_DIR"
+
+# Ищем все возможные варианты имени файла конфигурации
+POSSIBLE_CONFS=(
+    "${NGINX_CONF}"
+    "nginx/conf.d/${DOMAIN}#.conf"
+    "nginx/conf.d/${DOMAIN}*.conf"
+)
+
+FOUND_CONF=""
+
+# Проверяем точное совпадение
 if [ -f "$NGINX_CONF" ]; then
-    echo "Удаление конфигурации nginx..."
+    FOUND_CONF="$NGINX_CONF"
+else
+    # Ищем файлы, содержащие домен в имени (включая варианты с #)
+    for conf_file in nginx/conf.d/*.conf; do
+        if [ -f "$conf_file" ]; then
+            # Проверяем, содержит ли файл упоминание домена
+            if grep -q "$DOMAIN" "$conf_file" 2>/dev/null; then
+                FOUND_CONF="$conf_file"
+                break
+            fi
+        fi
+    done
+fi
+
+if [ -n "$FOUND_CONF" ] && [ -f "$FOUND_CONF" ]; then
+    echo "Удаление конфигурации nginx: $FOUND_CONF"
     
     # Создаем резервную копию перед удалением
-    BACKUP_DIR="nginx/conf.d/backups"
-    mkdir -p "$BACKUP_DIR"
-    BACKUP_FILE="${BACKUP_DIR}/${DOMAIN}.conf.$(date +%Y%m%d_%H%M%S).bak"
-    cp "$NGINX_CONF" "$BACKUP_FILE"
+    BACKUP_FILE="${BACKUP_DIR}/$(basename $FOUND_CONF).$(date +%Y%m%d_%H%M%S).bak"
+    cp "$FOUND_CONF" "$BACKUP_FILE"
     echo "✅ Создана резервная копия: $BACKUP_FILE"
     
     # Удаляем файл конфигурации
-    rm "$NGINX_CONF"
-    echo "✅ Удален файл конфигурации: $NGINX_CONF"
+    rm "$FOUND_CONF"
+    echo "✅ Удален файл конфигурации: $FOUND_CONF"
     NGINX_REMOVED=1
 else
-    echo "⚠️  Файл конфигурации $NGINX_CONF не найден (пропускаем)"
+    echo "⚠️  Файл конфигурации для $DOMAIN не найден (пропускаем)"
     NGINX_REMOVED=0
 fi
 
