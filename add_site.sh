@@ -41,7 +41,28 @@ server {
     listen 80;
     server_name ${DOMAIN} www.${DOMAIN};
 
-    return 301 https://${DOMAIN}\$request_uri;
+    # Cloudflare Flexible SSL: при X-Forwarded-Proto=https проксируем, не редиректим (иначе ERR_TOO_MANY_REDIRECTS)
+    if (\$http_x_forwarded_proto != "https") {
+        return 301 https://${DOMAIN}\$request_uri;
+    }
+
+    location / {
+        set \$upstream http://${SERVICE_NAME}:5000;
+        proxy_pass \$upstream;
+        proxy_set_header Host \$host;
+        proxy_set_header X-Real-IP \$remote_addr;
+        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto \$http_x_forwarded_proto;
+        proxy_set_header X-Forwarded-Host \$host;
+        proxy_redirect off;
+    }
+
+    location /static {
+        set \$upstream http://${SERVICE_NAME}:5000;
+        proxy_pass \$upstream;
+        proxy_cache_valid 200 1d;
+        add_header Cache-Control "public, max-age=86400";
+    }
 }
 
 server {
