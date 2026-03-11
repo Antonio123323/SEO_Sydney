@@ -15,13 +15,16 @@ app = Flask(__name__,
 
 @app.before_request
 def redirect_to_https():
-    # Redirect HTTP to HTTPS
+    # HTTP→HTTPS и www→non-www обрабатывает Nginx. Flask не редиректит при запросе через прокси,
+    # чтобы избежать ERR_TOO_MANY_REDIRECTS (Cloudflare Flexible SSL и др.)
+    if request.headers.get('X-Forwarded-For'):
+        return  # За прокси — редиректы делает Nginx
+    # Redirect HTTP to HTTPS (только при прямом подключении)
     if request.headers.get('X-Forwarded-Proto') == 'http':
         return redirect(request.url.replace('http://', 'https://'), code=301)
-
     # Redirect www to non-www
     if request.host.startswith('www.'):
-        new_host = request.host[4:]  # Remove 'www.'
+        new_host = request.host[4:]
         new_url = request.url.replace(f'//www.{new_host}', f'//{new_host}')
         return redirect(new_url, code=301)
     
