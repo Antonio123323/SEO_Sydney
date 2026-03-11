@@ -1,0 +1,1623 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px
+    }</style>
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <title>What Is Market Capitalization & Why It Matters</title>
+    <meta name="description"
+          content="Learn how market capitalization works, why it’s essential for investors and traders, and how TokenTact helps you make smarter, data-driven investment decisions.">
+    <style id='wp-emoji-styles-inline-css'>img.wp-smiley, img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+    }</style>
+    <style id='safe-svg-svg-icon-style-inline-css'>.safe-svg-cover .safe-svg-inside {
+        display: inline-block;
+        max-width: 100%
+    }
+
+    .safe-svg-cover svg {
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%
+    }</style>
+    <style id='global-styles-inline-css'>:root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--color--background: #ffffff;
+        --wp--preset--color--foreground: #404040;
+        --wp--preset--color--primary: #b91c1c;
+        --wp--preset--color--secondary: #15803d;
+        --wp--preset--color--tertiary: #0369a1;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        --wp--style--global--content-size: 40rem;
+        --wp--style--global--wide-size: 60rem
+    }
+
+    :where(body) {
+        margin: 0
+    }
+
+    .wp-site-blocks > .alignleft {
+        float: left;
+        margin-right: 2em
+    }
+
+    .wp-site-blocks > .alignright {
+        float: right;
+        margin-left: 2em
+    }
+
+    .wp-site-blocks > .aligncenter {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    :where(.is-layout-flex) {
+        gap: .5em
+    }
+
+    :where(.is-layout-grid) {
+        gap: .5em
+    }
+
+    .is-layout-constrained > .alignleft, .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em
+    }
+
+    .is-layout-constrained > .alignright, .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0
+    }
+
+    .is-layout-constrained > .aligncenter, .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important
+    }
+
+    .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important
+    }
+
+    .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size)
+    }
+
+    body .is-layout-flex {
+        display: flex
+    }
+
+    .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center
+    }
+
+    .is-layout-flex > :is(*,div) {
+        margin: 0
+    }
+
+    body .is-layout-grid {
+        display: grid
+    }
+
+    .is-layout-grid > :is(*,div) {
+        margin: 0
+    }
+
+    body {
+        padding: 0
+    }
+
+    a:where(:not(.wp-element-button)) {
+        text-decoration: underline
+    }
+
+    :root :where(.wp-element-button,.wp-block-button__link) {
+        background-color: #32373c;
+        border-width: 0;
+        color: #fff;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        padding: calc(.667em + 2px) calc(1.333em + 2px);
+        text-decoration: none
+    }
+
+    .has-black-color {
+        color: var(--wp--preset--color--black) !important
+    }
+
+    .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important
+    }
+
+    .has-white-color {
+        color: var(--wp--preset--color--white) !important
+    }
+
+    .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important
+    }
+
+    .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important
+    }
+
+    .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important
+    }
+
+    .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important
+    }
+
+    .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important
+    }
+
+    .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important
+    }
+
+    .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important
+    }
+
+    .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important
+    }
+
+    .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important
+    }
+
+    .has-background-color {
+        color: var(--wp--preset--color--background) !important
+    }
+
+    .has-foreground-color {
+        color: var(--wp--preset--color--foreground) !important
+    }
+
+    .has-primary-color {
+        color: var(--wp--preset--color--primary) !important
+    }
+
+    .has-secondary-color {
+        color: var(--wp--preset--color--secondary) !important
+    }
+
+    .has-tertiary-color {
+        color: var(--wp--preset--color--tertiary) !important
+    }
+
+    .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important
+    }
+
+    .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important
+    }
+
+    .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important
+    }
+
+    .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important
+    }
+
+    .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important
+    }
+
+    .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important
+    }
+
+    .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important
+    }
+
+    .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important
+    }
+
+    .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important
+    }
+
+    .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important
+    }
+
+    .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important
+    }
+
+    .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important
+    }
+
+    .has-background-background-color {
+        background-color: var(--wp--preset--color--background) !important
+    }
+
+    .has-foreground-background-color {
+        background-color: var(--wp--preset--color--foreground) !important
+    }
+
+    .has-primary-background-color {
+        background-color: var(--wp--preset--color--primary) !important
+    }
+
+    .has-secondary-background-color {
+        background-color: var(--wp--preset--color--secondary) !important
+    }
+
+    .has-tertiary-background-color {
+        background-color: var(--wp--preset--color--tertiary) !important
+    }
+
+    .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important
+    }
+
+    .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important
+    }
+
+    .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important
+    }
+
+    .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important
+    }
+
+    .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important
+    }
+
+    .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important
+    }
+
+    .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important
+    }
+
+    .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important
+    }
+
+    .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important
+    }
+
+    .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important
+    }
+
+    .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important
+    }
+
+    .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important
+    }
+
+    .has-background-border-color {
+        border-color: var(--wp--preset--color--background) !important
+    }
+
+    .has-foreground-border-color {
+        border-color: var(--wp--preset--color--foreground) !important
+    }
+
+    .has-primary-border-color {
+        border-color: var(--wp--preset--color--primary) !important
+    }
+
+    .has-secondary-border-color {
+        border-color: var(--wp--preset--color--secondary) !important
+    }
+
+    .has-tertiary-border-color {
+        border-color: var(--wp--preset--color--tertiary) !important
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important
+    }
+
+    .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important
+    }
+
+    .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important
+    }
+
+    .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important
+    }
+
+    .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important
+    }
+
+    .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important
+    }
+
+    .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important
+    }
+
+    .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important
+    }
+
+    .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important
+    }
+
+    .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important
+    }
+
+    .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em
+    }
+
+    :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6
+    }</style>
+    <link rel="canonical" href="blog/market-capitalization-why-it-matters"/>
+    <link rel='stylesheet' id='wp-block-library-css' href='static/assets/css/style.min.css' media='all'/>
+    <link rel='stylesheet' id='contact-form-7-css' href='static/assets/css/styles.css' media='all'/>
+    <link rel='stylesheet' id='google-fonts-css'
+          href='https://fonts.googleapis.com/css?family=Lato%3A400%2C500%2C600%2C700%7CPoppins%3A400%2C500%2C600%2C700&#038;ver=2.6.4'
+          media='all'/>
+    <link rel='stylesheet' id='wpml-legacy-dropdown-0-css' href='static/assets/css/style1.min.css' media='all'/>
+    <link rel='stylesheet' id='quantumai-style-css' href='static/assets/css/style1.css' media='all'/>
+    <link rel='stylesheet' id='registration-form-css' href='static/assets/css/style2.css' media='all'/>
+    <link rel="stylesheet" href="static/assets/css/splide.min.css">
+    <link rel="stylesheet" type="text/css" href="static/assets/css/style3.css"/>
+    <link rel="icon" href="static/assets/img/cropped-IC-Icon-3-32x32.png" sizes="32x32"/>
+    <link rel="icon" href="static/assets/img/cropped-IC-Icon-3-192x192.png" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="static/assets/img/cropped-IC-Icon-3-180x180.png"/>
+    <meta name="msapplication-TileImage" content="static/assets/img/cropped-IC-Icon-3-270x270.png"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" id="jquery-core-js"></script>
+    <script>
+        function today(delta) {
+            var ld = new Date(Date.now() + (86400000 * delta));
+            return document.write(ld.toLocaleDateString());
+        }
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "blog/market-capitalization-why-it-matters"
+    },
+    "headline": "What Is Market Capitalization & Why It Matters",
+    "description": "Learn how market capitalization works, why it’s essential for investors and traders, and how TokenTact helps you make smarter, data-driven investment decisions.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "static/assets/img/post/29/01.webp",
+        "width": 1024,
+        "height": 585
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Admin",
+        "url": "about"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Blockscope",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "static/assets/img/logo_blockscope.png",
+            "width": 600,
+            "height": 60
+        },
+        "url": "index"
+    },
+    "datePublished": "2025-12-24T05:58:24+00:00",
+    "dateModified": "2026-12-24T05:58:24+00:00",
+    "inLanguage": "en"
+}
+</script>
+</head>
+<body class="post-template-default single single-post postid-12539 single-format-standard wp-embed-responsive"
+      x-data="{ menuOpen: false }">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104728357', 'ym');
+
+    ym(104728357, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/104728357" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<div id="page">
+    <div id="content" class="relative">
+        <nav id="mob-menu" class="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition md:hidden"
+             x-show="menuOpen" x-transition>
+            <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
+                <div class="flex items-center justify-between px-5 pt-4">
+                    <a href="index">
+                        <span class="sr-only">Blockscope</span>
+                        <img class="h-7 w-auto"
+                             src="static/assets/img/logo_blue-1.png" alt="Advanced technology crypto platform">
+                    </a>
+                    <div class="-mr-2">
+                        <button type="button" id="mob-menu-close"
+                                class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500"
+                                x-on:click="menuOpen = ! menuOpen"><span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="menu-top-menu-main-container">
+                    <a href="login" target="_self"
+                       class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-emerald-600 hover:bg-gray-100">Login</a>
+                    <a href="signup" target="_self"
+                       class="block w-full bg-emerald-600 px-5 py-3 text-center font-medium text-white hover:bg-emerald-700">Create
+                        Account</a>
+                </div>
+        </nav>
+        <div class="relative overflow-hidden bg-gradient-to-tr from-gray-900 to-gray-800">
+            <div class="relative pt-6 pb-36 sm:pb-44">
+                <header id="masthead">
+                    <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-6" aria-label="Global">
+                        <div class="flex flex-1 items-center">
+                            <div class="flex w-full items-center justify-between md:w-auto">
+                                <a href="index">
+                                    <span class="sr-only">Blockscope</span>
+                                    <img class="h-7 w-auto sm:h-8" src="static/assets/img/logo_blockscope.png"
+                                         alt="Advanced technology crypto platform">
+                                </a>
+                                <div class="-mr-2 flex items-center md:hidden">
+                                    <button type="button" id="humburger-btn"
+                                            class="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white"
+                                            aria-expanded="false" x-on:click="menuOpen = ! menuOpen"><span
+                                            class="sr-only">Open main menu</span>
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                             stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu-top-menu-main-container">
+                                <ul id="primary-menu" class="menu main-menu-desktop hidden space-x-8 md:ml-10 md:flex"
+                                    aria-label="submenu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213">
+                                        <a href="about">About</a></li>
+
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162">
+                                        <a href="blog">Blog</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </nav>
+                </header>
+                <div class="mt-16 sm:mt-24">
+                    <div class="mx-auto max-w-7xl px-6 relative">
+                        <img class="absolute w-[850px] h-auto top-2/3 lg:bottom-auto lg:top-0 -right-64 z-0 pointer-events-none"
+                             alt="AI for crypto trading" src="static/assets/img/bg.png">
+                        <div class="lg:grid lg:grid-cols-12 lg:gap-8 relative z-10">
+                            <div class="text-center max-lg:mx-auto md:max-w-2xl lg:col-span-6 xl:col-span-7 lg:flex lg:items-center lg:text-left">
+                                <div>
+                                    <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+                                        What Is Market Capitalization & Why It Matters
+                                    </h1>
+                                    <div class="mt-6 flex items-center gap-x-4 text-sm md:text-base flex-wrap text-white justify-center lg:justify-start">
+                                        <div class="text-gray-300">
+                                            <time datetime="2025-04-05T18:09:45+00:00">24/10/2025</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article id="post-12539"
+                 class="post-12539 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
+            <div class="max-w-7xl mx-auto px-6">
+                <figure>
+                    <img width="1024" height="585"
+                         src="static/assets/img/post/29/01.webp"
+                         class="aspect-[16/9] w-full rounded-xl bg-gray-100 object-cover -mt-20 sm:-mt-24 relative z-20 wp-post-image"
+                         alt="Blockscope official website" decoding="async" fetchpriority="high"
+                         sizes="(max-width: 1024px) 100vw, 1024px"/>
+                </figure>
+            </div>
+            <div class="py-24 sm:py-32 pt-16 sm:pt-24">
+                <div class="entry-content prose md:prose-lg max-w-none px-6 prose-a:text-emerald-600">
+
+                    <p>Market capitalization — often called <b>market cap</b> — might sound like just another financial
+                        buzzword, but it's actually one of the most effective tools market participants use to evaluate
+                        the size and significance of a corporate entity. Whether you’re trading tech stocks, diving into
+                        cryptocurrency, or exploring automated investment tools, understanding this concept can sharpen
+                        your decisions and strategy.</p>
+                    <p>Put simply, market cap tells you how much a business is currently worth on the open market. It’s
+                        more than just a figure — it reflects how confident traders are in a company’s future, its
+                        growth outlook, and its market position. From global leaders like Apple to fast-moving
+                        blockchain startups, market cap serves as the shared language of value.</p>
+                    <p>Why should this matter to you?</p>
+                    <p>Because <b>market cap influences everything</b> from your risk exposure to your portfolio’s
+                        structure. If you're building wealth using an investment platform or looking to diversify your
+                        assets through automated digital currency tools, learning about firm worth can give you a real
+                        advantage.</p>
+                    <p>This article walks you through everything you need to know — without unnecessary jargon. You’ll
+                        learn:</p>
+                    <ul>
+                        <li>What market cap means and how to calculate it</li>
+                        <li>How companies are grouped by size</li>
+                        <li>Why market cap is a critical metric for investors and traders</li>
+                        <li>How it applies to crypto and tokenized markets</li>
+                        <li>Its broader role in national economies like Switerland’s</li>
+                        <li>How savvy market participants use it in strategy</li>
+                        <li>And how <b>TokenTact</b> helps you use this data in real time</li>
+                    </ul>
+                    <p>Whether you're just getting started or optimizing an active portfolio using an <i>automated
+                        crypto trading system</i>, this guide is designed to help you move forward with clarity and
+                        confidence.</p>
+                    <p>Let’s begin with the essentials — what exactly is market capitalization?</p>
+
+                    <h2> What is Market Capitalization?</h2>
+                    <p>Market capitalization is a clear and powerful measure used to estimate a business’s total market
+                        worth. At its core, it answers a vital question: <i>How much is this firm currently valued by
+                            the market?</i></p>
+                    <p>The formula is simple and widely used:</p>
+                    <p><b>Market Capitalization = Current Share Price × Total Outstanding Shares</b></p>
+                    <p>Here’s an example: if Company A has 10 million shares available and each one trades at $50, the
+                        market capitalization would be:</p>
+                    <p><b>$50 × 10,000,000 = $500 million</b></p>
+                    <p>This means traders and investors collectively assign a $500 million valuation to that
+                        company.</p>
+                    <h3>How It Differs from Revenue and Assets</h3>
+                    <p>Market cap is often confused with a business’s revenue or its asset value. But it’s different.
+                        While revenue shows total earnings and assets reflect what a firm owns, market cap is a <b>real-time
+                            estimate of perceived value</b>, driven by market activity and sentiment.</p>
+                    <table border="1" cellpadding="6" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>What It Measures</th>
+                            <th>What It Tells You</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><b>Revenue</b></td>
+                            <td>Total income from operations</td>
+                            <td>Business size and activity</td>
+                        </tr>
+                        <tr>
+                            <td><b>Assets</b></td>
+                            <td>Owned resources and property</td>
+                            <td>Financial structure and capacity</td>
+                        </tr>
+                        <tr>
+                            <td><b>Market Cap</b></td>
+                            <td>Share price × number of shares</td>
+                            <td>Investor sentiment and value on the market</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples from the Real World</h3>
+                    <ul>
+                        <li><b>Apple Inc.</b> — In 2024, Apple’s valuation hovered around <b>$3 trillion</b>, placing it
+                            at the top of global equity markets.
+                        </li>
+                        <li><b>Tesla</b> — A <a href="blog/how-to-win-in-crypto-2025">major growth player with a market cap</a> often below $1 trillion, showing high
+                            innovation and volatility.
+                        </li>
+                        <li><b>Biotech Startups</b> — Many operate under $500 million in value, offering high potential
+                            but higher risk exposure.
+                        </li>
+                    </ul>
+                    <h3>Why It’s Always Moving</h3>
+                    <p>Since market cap depends on live trading prices, it shifts constantly throughout each trading
+                        session. A new product launch, strong financial report, or market rumors can drive the valuation
+                        up. On the flip side, scandals or weak forecasts can trigger sharp declines.</p>
+                    <p>In this way, market capitalization serves as a <b>real-time reflection of market confidence</b> —
+                        not just about numbers, but perception, trust, and future expectations.</p>
+
+                    <h2> Types of Market Capitalization: Company Categories</h2>
+                    <p>Market cap isn’t just a static figure — it’s also a practical framework for grouping businesses
+                        by their overall size. This classification gives <b>portfolio builders and traders</b> a quick
+                        way to evaluate risk levels, volatility, and growth expectations. Here's a breakdown of the main
+                        categories:</p>
+                    <h3><b>Large-Cap: Established and Reliable</b></h3>
+                    <p><b>Definition:</b> Companies valued at <b>$10 billion or more</b></p>
+                    <p>These major players — like Apple, Microsoft, and Google — dominate their sectors. They usually
+                        have a global reach, steady income, and a history of stable operations.</p>
+                    <ul>
+                        <li>Lower risk compared to smaller peers</li>
+                        <li>Often offer consistent dividends</li>
+                        <li>Favored by long-term and cautious investors</li>
+                    </ul>
+                    <p>Large-cap stocks may not deliver explosive short-term gains, but they’re valued for their <b>durability
+                        and predictable growth</b>. They serve as foundational assets in most diversified portfolios.
+                    </p>
+                    <h3><b>Mid-Cap: Room to Grow</b></h3>
+                    <p><b>Definition:</b> Market cap ranging from <b>$2 billion to $10 billion</b></p>
+                    <p>Mid-cap companies are usually in their expansion phase. They’re beyond the startup stage, yet
+                        still have plenty of market share to capture. These firms strike a balance between stability and
+                        aggressive growth potential.</p>
+                    <ul>
+                        <li>Balanced risk and return potential</li>
+                        <li>Opportunities for acquisitions or innovation-driven expansion</li>
+                        <li>Ideal for investors aiming for growth without extreme volatility</li>
+                    </ul>
+                    <p>Think Zoom (pre-2023), Spotify, and growing firms in tech or energy sectors — all examples of
+                        mid-cap dynamics.</p>
+                    <h3><b>Small-Cap: Volatility with Upside</b></h3>
+                    <p><b>Definition:</b> Valued at <b>less than $2 billion</b></p>
+                    <p>Smaller-cap firms are typically younger, agile, and sometimes niche-focused. These businesses
+                        offer potential for rapid growth, but they come with <b>greater sensitivity to market shifts</b>
+                        and higher financial uncertainty.</p>
+                    <ul>
+                        <li>Frequently impacted by broader economic trends</li>
+                        <li>Limited resources and brand reach</li>
+                        <li>Popular with high-risk investors chasing big returns</li>
+                    </ul>
+                    <p>Many of these companies operate in emerging sectors — from biotech startups to fintech disruptors
+                        — and may evolve into tomorrow’s market leaders.</p>
+                    <h3>Why It Matters</h3>
+                    <p><a href="blog/market-capitalization-for-investors">Market cap segmentation isn’t arbitrary</a>. It’s a strategic lens used by both individual traders
+                        and major funds to <b>allocate capital efficiently</b>. By diversifying across sizes, you spread
+                        exposure to different stages of business growth and risk levels.</p>
+                    <p>For instance, large-cap indexes like the <b>S&P 500</b> represent mature firms, while the <b>Russell
+                        2000</b> offers insight into the performance of smaller, more volatile companies. Together, they
+                        create a fuller picture of market health.</p>
+                    <p>
+                        <img decoding="async" src="static/assets/img/post/29/02.webp" alt="Article illustration">
+                    </p>
+                    <h2> Why Market Capitalization Matters</h2>
+                    <p>Market cap isn't just a tool for grouping companies — it’s a <b>core metric used by traders to
+                        evaluate value, measure potential, and structure smart strategies</b>. Here's why it holds such
+                        significance in modern investing.</p>
+                    <h3><b> Making Apples-to-Apples Comparisons</b></h3>
+                    <p>Trying to weigh a global tech giant like Apple against a regional electric vehicle startup
+                        without a common scale would be meaningless. Market cap provides that common ground.</p>
+                    <p>With it, you can:</p>
+                    <ul>
+                        <li>Compare similar-sized firms within a specific industry</li>
+                        <li>Identify leaders and newcomers in a market</li>
+                        <li>Uncover undervalued or inflated assets based on scale and fundamentals</li>
+                    </ul>
+                    <h3><b> Pinpointing a Company’s Growth Stage</b></h3>
+                    <p>The size of a firm — as shown through its market cap — usually reveals where it stands in its
+                        growth cycle:</p>
+                    <ul>
+                        <li><b>Large-cap</b>: Mature and established, with slower but steady progress</li>
+                        <li><b>Mid-cap</b>: Rapid expansion, innovation, and industry positioning</li>
+                        <li><b>Small-cap</b>: Early-stage, agile, and high-risk/high-reward</li>
+                    </ul>
+                    <p>Knowing this allows investors to tailor exposure to align with their strategy and timeline.</p>
+                    <h3><b> A Window into Market Sentiment</b></h3>
+                    <p>When a firm’s valuation increases, it often signals confidence. Market cap can grow thanks to
+                        solid earnings — but also due to <b>positive expectations</b>, breakthroughs, or even hype.</p>
+                    <p>On the flip side, a declining market cap may reveal uncertainty before it’s visible in financial
+                        statements — offering a useful early signal for re-evaluating exposure.</p>
+                    <h3><b> Building Diversified Portfolios</b></h3>
+                    <p>Investors use market cap to divide portfolios across different segments of the market. For
+                        example:</p>
+                    <ul>
+                        <li><b>Large-caps</b> = reliability, lower volatility, dividends</li>
+                        <li><b>Mid-caps</b> = a mix of growth and resilience</li>
+                        <li><b>Small-caps</b> = higher risk, potential for explosive returns</li>
+                    </ul>
+                    <p>Blending all three allows you to capture multiple types of opportunity while smoothing overall
+                        portfolio risk.</p>
+                    <h3><b> Core of Index Investing and ETFs</b></h3>
+                    <p>Most passive investing strategies are built around market cap. Indexes like the <b>S&P 500</b>
+                        are cap-weighted — meaning larger firms have more influence. The same applies to ETFs and mutual
+                        funds.</p>
+                    <p>Examples:</p>
+                    <p><b>S&P 500</b> — Focused on larg</p>
+
+
+
+                            <h2> Market Capitalization in Crypto and Emerging Assets</h2>
+                            <p>Market capitalization isn't just for public companies. In the fast-growing universe of
+                                <b>cryptocurrencies and tokenized assets</b>, it plays an equally critical role — if not
+                                a greater one.</p>
+                            <h3><b>How Market Cap Is Calculated in Crypto</b></h3>
+                            <p>Just like with traditional equities, the formula is simple:</p>
+                            <p><b>Crypto Market Cap = Token Price × Circulating Supply</b></p>
+                            <p>For example, if CoinX trades at $2 and there are 10 million tokens in circulation, the
+                                project’s market capitalization would be:</p>
+                            <p><b>$2 × 10,000,000 = $20 million</b></p>
+                            <p>This reflects the total perceived value of the token within the crypto community.</p>
+                            <h3><b>Why “Dominance” Matters</b></h3>
+                            <p>Market cap doesn’t just show value — it shows <b>influence</b>. For instance:</p>
+                            <ul>
+                                <li><b>Bitcoin</b> — Often holds over 40% of the total crypto market’s value</li>
+                                <li><b>Ethereum</b> — Commonly represents 15–20% of total crypto capitalization</li>
+                            </ul>
+                            <p>This concept of dominance is crucial for users of <i>automated crypto trading
+                                platforms</i> who want to maintain balanced exposure or evaluate the concentration of
+                                their investments.</p>
+                            <h3><b>Watch Out for Inflated Numbers</b></h3>
+                            <p>Unlike traditional markets, crypto is still maturing — and that means distortions happen.
+                                Some projects release vast quantities of tokens with barely any liquidity. This can
+                                create the illusion of a billion-dollar cap, even though daily trading might be just
+                                $10,000.</p>
+                            <p><b>Always check volume and liquidity</b> to avoid falling for artificially inflated caps.
+                            </p>
+                            <h3><b>Applications in DeFi, NFTs, and Tokenization</b></h3>
+                            <p>Market cap is also a core metric across the decentralized finance ecosystem:</p>
+                            <ul>
+                                <li><b>DeFi protocols</b> like Aave and Uniswap are benchmarked by token valuation</li>
+                                <li><b>NFT collections</b> use floor price × total supply to approximate market value
+                                </li>
+                                <li><b>Tokenized real estate</b> or commodities reflect investor sentiment through
+                                    aggregate token prices
+                                </li>
+                            </ul>
+                            <p>As blockchain technology continues to grow, <b>market capitalization will remain the
+                                go-to metric</b> for understanding size, traction, and credibility — even when
+                                traditional metrics are absent.</p>
+
+                            <h2> Market Capitalization and Its Role in a National Economy (Switerland as an
+                                Example)</h2>
+                            <p>Market capitalization doesn’t just help analyze companies — it also reflects the <b>economic
+                                depth and investment culture</b> of entire countries. Using Switerland as a case study,
+                                we can see how a nation’s firm valuation links to its financial maturity and capital
+                                market activity.</p>
+                            <h3><b>What Market Cap Reveals About a Nation</b></h3>
+                            <p>A country’s total market capitalization represents the summed-up value of all companies
+                                listed on its stock exchange. When compared to the country’s GDP, this figure shows the
+                                <b>relative strength and accessibility of the equity market</b>.</p>
+                            <p>Consider these benchmarks:</p>
+                            <ul>
+                                <li><b>United States</b>: Market cap = ~150% of GDP</li>
+                                <li><b>Switzerland</b>: Often exceeds 200%</li>
+                                <li><b>Germany</b>: Falls within 65–80%</li>
+                            </ul>
+                            <p>These ratios indicate investor trust, listing activity, and how well developed the
+                                capital markets are. Now let’s see where Switerland stands.</p>
+                            <h3><b>Switerland’s Market Cap: Limited and Underdeveloped</b></h3>
+                            <p>Switerland’s total listed firm value is around <b>16% of its GDP</b> — far below regional
+                                averages. Though the country has major companies like Krka and Petrol, only a small
+                                number of firms are public. The Ljubljana Stock Exchange remains shallow, with <b>low
+                                    liquidity and trading volume</b>.</p>
+                            <p>This means:</p>
+                            <ul>
+                                <li>Fewer investment opportunities in domestic stocks</li>
+                                <li>New businesses depend on banks or private equity, not IPOs</li>
+                                <li>Retail investors have minimal exposure to the stock market</li>
+                            </ul>
+                            <h3><b>Why This Slows Economic Progress</b></h3>
+                            <p>When a nation lacks a strong equity market, growth is constrained. Public markets fuel
+                                expansion, attract foreign capital, and help people build personal wealth through
+                                investments. A small market cap <b>limits both business growth and financial
+                                    inclusion</b>.</p>
+                            <h3><b>How Switerland Is Responding</b></h3>
+                            <p>To improve the situation, Switerland is working to develop its capital markets
+                                through:</p>
+                            <ul>
+                                <li>Incentivizing more companies to go public</li>
+                                <li>Providing <b>long-term tax advantages</b> for equity investors</li>
+                                <li>Upgrading the Ljubljana exchange infrastructure and regulatory environment</li>
+                            </ul>
+                            <p>These reforms aim to boost investor participation and make the Switerlandn financial
+                                ecosystem more attractive — at home and abroad.</p>
+
+                            <h2> How Investors Use Market Capitalization in Practice</h2>
+                            <p>Understanding market capitalization is just the first step — putting it into action is
+                                what really matters. Here’s how investors use this metric when building portfolios and
+                                evaluating opportunities.</p>
+                            <h3><b>Balancing Exposure by Company Size</b></h3>
+                            <p>Smart investors often diversify across different cap sizes to balance risk and potential
+                                return:</p>
+                            <ul>
+                                <li><b>Large-cap stocks</b>: Act as portfolio anchors — they’re generally stable,
+                                    dividend-yielding, and less volatile during downturns
+                                </li>
+                                <li><b>Mid-caps</b>: Offer a mix of stability and growth, often scaling up in
+                                    competitive markets
+                                </li>
+                                <li><b>Small-caps</b>: Provide higher risk, but also the potential for rapid gains if
+                                    the companies grow or get acquired
+                                </li>
+                            </ul>
+                            <p>This kind of spread helps reduce overdependence on any one segment of the market.</p>
+                            <h3><b>Strategy by Capitalization Tier</b></h3>
+                            <p>Many trading and investment approaches are structured around market cap groups. For
+                                instance:</p>
+                            <ul>
+                                <li><b>Small-cap growth funds</b> target emerging firms with breakout potential</li>
+                                <li><b>Large-cap value portfolios</b> seek out stable companies that may be undervalued
+                                </li>
+                                <li><b>Mid-cap ETFs</b> provide access to firms in expansion mode without excessive
+                                    volatility
+                                </li>
+                            </ul>
+                            <p>These strategies allow investors to tailor their portfolios based on financial goals,
+                                risk tolerance, and investment horizons.</p>
+                            <h3><b>Managing Volatility and Evaluating Risk</b></h3>
+                            <p>Smaller-cap stocks typically experience greater price swings, which isn’t necessarily a
+                                disadvantage — it can offer opportunities if managed wisely. Investors often combine
+                                market cap analysis with other indicators like:</p>
+                            <ul>
+                                <li><b>P/E Ratio</b> — Helps assess how a stock’s price relates to its earnings</li>
+                                <li><b>Revenue Growth</b> — Shows how fast a company is increasing its sales</li>
+                                <li><b>Profit Margins</b> — Indicates operational efficiency and scalability</li>
+                            </ul>
+                            <p>Market capitalization gives context to these metrics and helps frame them within a
+                                broader view of market risk and potential upside.</p>
+
+                            <h2> How TokenTact Helps Investors Analyze Market Capitalization</h2>
+                            <p>Knowing what market capitalization is doesn't always translate to actionable insights.
+                                That’s where <b><a href="https://tokentact-ch.com/ttch?arc=29"
+                                                   target="_blank">https://tokentact-ch.com/</a></b> comes into play — a smart <b>automated
+                                    trading and investment platform</b> built to turn financial data into strategic
+                                decisions.</p>
+                            <h3><b>Live Market Cap Monitoring and Insights</b></h3>
+                            <p>The platform provides real-time tools to observe <b>capitalization trends</b> across
+                                industries, sectors, and asset types. This helps traders and investors spot where value
+                                is rising — and where opportunities may be fading.</p>
+                            <h3><b>Intelligent Classification by Asset Size</b></h3>
+                            <p>TokenTact uses intelligent automation to categorize assets — from cryptocurrencies to
+                                traditional stocks — by their market cap. Whether you prefer the stability of large-caps
+                                or the upside of small-cap tokens, the system offers clear suggestions tailored to your
+                                strategy.</p>
+                            <h3><b>Unified Data From Crypto and Classic Markets</b></h3>
+                            <p>What makes TokenTact stand out is its ability to blend data from blockchain-based assets
+                                and conventional securities. This lets users gain a complete view of how changes in
+                                market cap affect their cross-market holdings.</p>
+                            <h3><b>Automation for Smarter Investing</b></h3>
+                            <p>The platform includes automated tools that help you:</p>
+                            <ul>
+                                <li>Receive alerts when market caps change dramatically</li>
+                                <li>Automatically rebalance your holdings based on valuation trends</li>
+                                <li>Track dominance and liquidity levels in real time</li>
+                            </ul>
+                            <p>Whether you're a beginner or a seasoned investor, <b>TokenTact</b> makes it easier to use
+                                market cap data to your advantage and build better-informed strategies.</p>
+                            <p>
+                                <img decoding="async" src="static/assets/img/post/29/03.webp" alt="Article illustration">
+                            </p>
+                            <h2> Conclusion</h2>
+                            <p>Market capitalization is more than just a number — it’s a <b>strategic lens</b> through
+                                which investors assess business value, market dynamics, and even national financial
+                                health. Whether you're diving into equities, crypto assets, or building a diversified
+                                portfolio, market cap knowledge is a powerful advantage.</p>
+                            <p>It reflects <a href="blog/invest-100-like-a-pro">how the investment community values</a> a company in real time — based on both
+                                financial performance and future expectations. Market cap also enables <b>apples-to-apples
+                                    comparisons</b>, supports diversified asset allocation, and forms the basis of
+                                widely used tools like ETFs, indexes, and algorithmic platforms.</p>
+                            <p>Zooming out, national market capitalization levels mirror the depth of financial markets
+                                and the vibrancy of economic ecosystems. Countries with higher cap-to-GDP ratios often
+                                enjoy stronger investor participation and faster innovation cycles.</p>
+                            <p>By mastering the logic behind market cap — and applying it using smart tools like <b>TokenTact</b>
+                                — investors are better equipped to <b>spot trends, reduce uncertainty, and make smarter,
+                                    data-backed decisions</b>.</p>
+<div class="related-posts">
+  <h3>Read also:</h3>
+  <ul>
+    <li><a href="blog/market-capitalization-for-investors" target="_blank" rel="noopener noreferrer">
+      Market Capitalization for Investors — Understanding the Basics
+    </a></li>
+    <li><a href="blog/invest-100-like-a-pro" target="_blank" rel="noopener noreferrer">
+      How to Invest $100 Like a Pro — Smart Crypto Strategies
+    </a></li>
+    <li><a href="blog/how-to-win-in-crypto-2025" target="_blank" rel="noopener noreferrer">
+      How to Win in Crypto 2026 — Key Insights for Success
+    </a></li>
+  </ul>
+</div>
+
+
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer class="bg-white border-t border-gray-200" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-28">
+
+                <div class="mt-16 col-span-1 xl:mt-0">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">Blockscope</h3>
+                            <div class="menu-footer-company-container">
+                                <ul id="footer-menu-1" class="menu footer-menu mt-6 space-y-4" aria-label="submenu">
+                                    <li id="menu-item-200"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200">
+                                        <a href="about">About</a></li>
+
+                                    <li id="menu-item-164"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9 current_page_item current_page_parent menu-item-164">
+                                        <a href="blog" aria-current="page">Blog</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24" style="margin-bottom:16px;">
+                <p class="text-xs leading-5 text-gray-500">©
+                    All rights reserved 2026 <strong>Blockscope</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="mysticky-welcomebar-fixed mysticky-site-front mysticky-welcomebar-position-top mysticky-welcomebar-display-desktop mysticky-welcomebar-display-mobile mysticky-welcomebar-attention-default mysticky-welcomebar-entry-effect-none"
+     data-after-triger="after_a_few_seconds" data-triger-sec="0" data-position="top" data-height="60"
+     data-rediect="close_bar" data-aftersubmission="dont_show_welcomebar">
+    <div class="mysticky-welcomebar-fixed-wrap">
+        <div class="mysticky-welcomebar-content">
+            <p>Investing in digital assets carries significant risk. Only proceed if you fully understand the risks
+                involved — you could lose the entire amount you invest. This applies to all Canadian users as well.</p>
+        </div>
+        <div class="mysticky-welcomebar-btn ">
+            <a href="javascript:void(0)">Got it!</a>
+        </div>
+        <span class="mysticky-welcomebar-close" style="color:#000000">X</span>
+    </div>
+</div>
+<style>.mysticky-welcomebar-fixed, .mysticky-welcomebar-fixed * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.mysticky-welcomebar-fixed {
+    background-color: #1a2537;
+    font-family: Poppins;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    opacity: 0
+}
+
+.mysticky-welcomebar-fixed-wrap {
+    min-height: 60px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%
+}
+
+.mysticky-welcomebar-animation {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s
+}
+
+.mysticky-welcomebar-position-top {
+    top: 0
+}
+
+.mysticky-welcomebar-position-bottom {
+    bottom: 0
+}
+
+.mysticky-welcomebar-position-top.mysticky-welcomebar-entry-effect-slide-in {
+    top: -60px
+}
+
+.mysticky-welcomebar-position-bottom.mysticky-welcomebar-entry-effect-slide-in {
+    bottom: -60px
+}
+
+.mysticky-welcomebar-entry-effect-fade {
+    opacity: 0
+}
+
+.mysticky-welcomebar-entry-effect-none {
+    display: none
+}
+
+.input-error, .mysticky-welcomebar-fixed.mysticky-welcomebar-btn-desktop .mysticky-welcomebar-btn {
+    display: block
+}
+
+.mysticky-welcomebar-fixed .mysticky-welcomebar-content p a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25ch
+}
+
+.mysticky-welcomebar-fixed .mysticky-welcomebar-content p, .mysticky-welcomebar-fixed .mysticky-welcomebar-content p a {
+    color: #fff;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: Poppins
+}
+
+.mysticky-welcomebar-fixed .mysticky-welcomebar-btn {
+    display: none;
+    line-height: 1;
+    margin-left: 10px
+}
+
+.mysticky-welcomebar-fixed .mysticky-welcomebar-btn a {
+    background-color: #000;
+    font-family: inherit;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.2;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 5px 20px;
+    white-space: nowrap
+}
+
+.mysticky-welcomebar-fixed .mysticky-welcomebar-btn a:hover {
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5)
+}
+
+.mysticky-welcomebar-fixed .mysticky-welcomebar-close {
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: #000;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    outline: 0;
+    text-decoration: none;
+    text-shadow: 0 0 0 #fff;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+}
+
+.mysticky-welcomebar-fixed .mysticky-welcomebar-close:hover {
+    opacity: 1;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.mysticky-welcomebar-fixed .mysticky-welcomebar-close span.dashicons {
+    font-size: 27px
+}
+
+.mysticky-welcomebar-fixed.mysticky-welcomebar-showx-desktop .mysticky-welcomebar-close {
+    display: inline-block;
+    cursor: pointer
+}
+
+.mysticky-welcomebar-btn a {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes flash {
+    50%, from, to {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@keyframes flash {
+    50%, from, to {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+.mysticky-welcomebar-attention-flash.animation-start .mysticky-welcomebar-btn a {
+    -webkit-animation-name: flash;
+    animation-name: flash
+}
+
+@keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0)
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0)
+    }
+}
+
+.mysticky-welcomebar-attention-shake.animation-start .mysticky-welcomebar-btn a {
+    -webkit-animation-name: shake;
+    animation-name: shake
+}
+
+@-webkit-keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg)
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg)
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg)
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg)
+    }
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg)
+    }
+}
+
+@keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg)
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg)
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg)
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg)
+    }
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg)
+    }
+}
+
+.mysticky-welcomebar-attention-swing.animation-start .mysticky-welcomebar-btn a {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing
+}
+
+@-webkit-keyframes tada {
+    from, to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    }
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+}
+
+@keyframes tada {
+    from, to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    }
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+}
+
+.mysticky-welcomebar-attention-tada.animation-start .mysticky-welcomebar-btn a {
+    -webkit-animation-name: tada;
+    animation-name: tada
+}
+
+@-webkit-keyframes heartBeat {
+    0%, 28%, 70% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    14%, 42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+}
+
+@keyframes heartBeat {
+    0%, 28%, 70% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    14%, 42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+}
+
+.mysticky-welcomebar-attention-heartbeat.animation-start .mysticky-welcomebar-btn a {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+}
+
+@-webkit-keyframes wobble {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+    }
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+    }
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+    }
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+    }
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+    }
+}
+
+@keyframes wobble {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+    }
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+    }
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+    }
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+    }
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+    }
+}
+
+.mysticky-welcomebar-attention-wobble.animation-start .mysticky-welcomebar-btn a {
+    -webkit-animation-name: wobble;
+    animation-name: wobble
+}
+
+@media only screen and (min-width: 768px) {
+    .mysticky-welcomebar-display-desktop.mysticky-welcomebar-entry-effect-fade.entry-effect {
+        opacity: 1
+    }
+
+    .mysticky-welcomebar-display-desktop.mysticky-welcomebar-entry-effect-none.entry-effect {
+        display: block
+    }
+
+    .mysticky-welcomebar-display-desktop.mysticky-welcomebar-position-top.mysticky-welcomebar-entry-effect-slide-in.entry-effect.mysticky-welcomebar-fixed, .mysticky-welcomebar-display-desktop.mysticky-welcomebar-position-top.mysticky-welcomebar-fixed {
+        top: 0
+    }
+
+    .mysticky-welcomebar-display-desktop.mysticky-welcomebar-position-bottom.mysticky-welcomebar-entry-effect-slide-in.entry-effect.mysticky-welcomebar-fixed, .mysticky-welcomebar-display-desktop.mysticky-welcomebar-position-bottom.mysticky-welcomebar-fixed {
+        bottom: 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mysticky-welcomebar-display-mobile.mysticky-welcomebar-entry-effect-fade.entry-effect {
+        opacity: 1
+    }
+
+    .mysticky-welcomebar-display-mobile.mysticky-welcomebar-entry-effect-none.entry-effect {
+        display: block
+    }
+
+    .mysticky-welcomebar-display-mobile.mysticky-welcomebar-position-top.mysticky-welcomebar-entry-effect-slide-in.entry-effect.mysticky-welcomebar-fixed, .mysticky-welcomebar-display-mobile.mysticky-welcomebar-position-top.mysticky-welcomebar-fixed {
+        top: 0
+    }
+
+    .mysticky-welcomebar-display-mobile.mysticky-welcomebar-position-bottom.mysticky-welcomebar-entry-effect-slide-in.entry-effect.mysticky-welcomebar-fixed, .mysticky-welcomebar-display-mobile.mysticky-welcomebar-position-bottom.mysticky-welcomebar-fixed {
+        bottom: 0
+    }
+
+    .mysticky-welcomebar-fixed.mysticky-welcomebar-btn-desktop .mysticky-welcomebar-btn {
+        display: none
+    }
+
+    .mysticky-welcomebar-fixed.mysticky-welcomebar-btn-mobile .mysticky-welcomebar-btn {
+        display: block;
+        margin-top: 10px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mysticky-welcomebar-fixed-wrap {
+        padding: 15px 35px 10px 10px;
+        flex-wrap: wrap
+    }
+
+    .mysticky-welcomebar-fixed .mystickymenu-front.mysticky-welcomebar-lead-content {
+        margin: 10px 0 10px 20px !important
+    }
+
+    .mysticky-welcomebar-fixed .mysticky-welcomebar-btn {
+        padding-left: 10px
+    }
+}
+
+body.mysticky-welcomebar-apper #wpadminbar {
+    z-index: 99999999
+}
+
+.mysticky-welcomebar-fixed .mystickymenu-front.mysticky-welcomebar-lead-content {
+    display: flex;
+    width: auto;
+    margin: 0 0 0 10px
+}
+
+.mystickymenu-front.mysticky-welcomebar-lead-content input[type=text] {
+    font-size: 12px;
+    padding: 7px 5px;
+    margin-right: 10px;
+    min-width: 50%;
+    border: 0;
+    width: auto
+}
+
+.mystickymenu-front.mysticky-welcomebar-lead-content input[type=text]:focus {
+    outline: unset;
+    box-shadow: unset
+}
+
+.input-error {
+    color: red;
+    font-style: normal;
+    font-family: inherit;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0
+}
+
+.mysticky-welcomebar-fixed.mysticky-site-front .mysticky-welcomebar-btn.contact-lead-button {
+    margin-left: 0
+}
+
+.morphext > .morphext__animated {
+    display: inline-block
+}</style>
+<script>
+    function updateHtmlMarginTop() {
+        const stickyBar = document.querySelector('.mysticky-welcomebar-fixed');
+
+        if (stickyBar) {
+            const style = window.getComputedStyle(stickyBar);
+
+            const isVisible = style.display !== 'none' &&
+                style.visibility !== 'hidden' &&
+                parseFloat(style.opacity) !== 0;
+
+            if (isVisible) {
+                const height = stickyBar.offsetHeight;
+                document.documentElement.style.marginTop = height + 'px';
+            } else {
+                document.documentElement.style.marginTop = '';
+            }
+        } else {
+            document.documentElement.style.marginTop = '';
+        }
+    }
+
+    // Инициализация при загрузке
+    window.addEventListener('load', function () {
+        setTimeout(() => {
+            updateHtmlMarginTop();
+
+            // Назначаем обработчик на кнопку закрытия
+            const closeBtn = document.querySelector('.mysticky-welcomebar-close');
+            const stickyBar = document.querySelector('.mysticky-welcomebar-fixed');
+
+            if (closeBtn && stickyBar) {
+                closeBtn.addEventListener('click', function () {
+                    stickyBar.style.display = 'none'; // скрываем панель
+                    document.documentElement.style.marginTop = ''; // убираем отступ
+                });
+            }
+        }, 300);
+    });
+
+    // Повторная проверка на всякий случай (если бар появляется позже)
+    setInterval(updateHtmlMarginTop, 1000);
+</script>
+<script>
+    const openBtn = document.getElementById('humburger-btn');
+    const closeBtn = document.getElementById('mob-menu-close');
+    const mobMenu = document.getElementById('mob-menu');
+
+    openBtn.addEventListener('click', () => {
+        mobMenu.classList.add('show');
+        mobMenu.classList.remove('hidden');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        mobMenu.classList.remove('show');
+        // Ждём окончания анимации, прежде чем скрыть pointer-events
+        setTimeout(() => {
+            mobMenu.classList.add('hidden');
+        }, 300); // 300ms соответствует transition
+    });
+</script>
+</body>
+</html>
