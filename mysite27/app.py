@@ -188,7 +188,7 @@ def crypto_stock_apps_uk():
 
 @app.route('/blog/crypto-tax-uk-2025')
 def crypto_tax_uk_2025():
-    return render_template('blog/crypto-tax-uk-2025/index.html')
+    return render_template('blog/crypto-tax-uk-2026/index.html')
 
 @app.route('/blog/crypto-trading-uk')
 def crypto_trading_uk():
@@ -236,7 +236,7 @@ def hmrc_crypto_tracking():
 
 @app.route('/blog/nft-tax-uk-2025')
 def nft_tax_uk_2025():
-    return render_template('blog/nft-tax-uk-2025/index.html')
+    return render_template('blog/nft-tax-uk-2026/index.html')
 
 @app.route('/blog/prop-trading-london')
 def prop_trading_london():
